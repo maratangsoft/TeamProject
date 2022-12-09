@@ -6,7 +6,80 @@
         <title>Index</title>
 
         <style>
+            .main_img{
+                height: 500px;
+                background-image: url("image/main/mainspot_221201.jpg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+            }
+
+            div.main_icons{  
+                overflow: hidden;
+                background-color: rgb(245, 244, 244);
+                text-align: center;
+                margin:0 auto;
+                display: flex;
+                justify-content: center;
+            }
+            div.main_icons ul{
+                margin: 0 auto;
+                list-style-type: none; 
+                text-align: center;
+                display: flex;
+                justify-content: center;            }
+            .main_icons ul li{    margin: 20 auto; padding: 16px;}
+            .main_icons img{width: 40px; height: 40px;}
+            ul li{
+                display: inline; 
+                list-style: none; 
+                float: left;
+            }
+            ul li a{text-decoration: none; color: black;}
+            .main_news{
+                overflow: hidden;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+            }
             
+            #news1 {
+                background-image: url(./image/main/news_banner1.png);
+                background-position: left;
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 50%;
+                border: 1px solid rgb(214, 214, 214);
+                overflow: hidden;
+                float: left;
+                display: flex;
+                justify-content: center;
+            }
+            #news2{
+                background-image: url(./image/main/news_banner1.png);
+                background-position: left;
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 50%;
+                border: 1px solid rgb(214, 214, 214);
+                overflow: hidden; 
+                display: flex;
+                justify-content: center;           
+            }
+            
+            #news1 img{width: 150px; height: 150px;}
+            #news1 p{color: black; text-decoration: none;}
+            #news2 img{width: 150px; height: 150px;}
+            .main_event{
+                overflow: hidden;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+            }
+           
         </style>
 
         <script>
@@ -18,41 +91,78 @@
         <header>
 
         </header>
-        <img src="" alt="GIF" >
-        <ul>
-            <li>
-                <a href="./index.html">
-                    <img src="" alt="motel">모텔
-                </a>
-            </li>
-            <li>
-                <a href="./index.html">
-                    <img src="" alt="hotel">호텔&리조트
-                </a>
-            </li>
-            <li>
-                <a href="./index.html">
-                    <img src="" alt="pension">펜션
-                </a>
-            </li>
-            <li>
-                <a href="./index.html">
-                    <img src="" alt="guesthouse">게스트하우스
-                </a>
-            </li>
-            <li>
-                <a href="./index.html">
-                    <img src="" alt="camping">켐핑&글램핑
-                </a>
-            </li>
-            <li>
-                <a href="./index.html">
-                    <img src="" alt="abroad">해외여행
-                </a>
-            </li>
-        </ul>
+        <div class="main_img" style="background-image: url(./image/main/mainspot_221201.jpg);">
+            <a href="./more/eventView/6.html"></a>
+        </div>
+        <div class="main_icons">
+            <ul>
+                <li>
+                    <a href="./product/home/1.html">
+                        <img src="./image/main/ico_category_01.png" alt="motel">
+                        <p>모텔</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./product/search/2/2001.html">
+                        <img src="./image/main/ico_category_02.png" alt="hotel">
+                        <p>호텔&리조트</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./product/search/3/3001.html">
+                        <img src="./image/main/ico_category_03.png" alt="pension">
+                        <p>펜션</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./product/search/4/4001.html">
+                        <img src="./image/main/ico_category_04.png" alt="guesthouse">
+                        <p>게스트하우스</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./product/search/5/5001.html">
+                        <img src="./image/main/ico_category_05.png" alt="camping">
+                        <p>켐핑&글램핑</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./more/eventView/6.html">
+                        <img src="./image/main/ico_category_09.png" alt="abroad">
+                        <p>해외여행</p>
+                    </a>
+                </li>
+            </ul>
+            <br>
+        </div>
+        <h2 style="display: flex; justify-content: left;">여기어때 소식</h2>
+       <div class="main_news">
+            
+            <div id="news1">
+                <p>alfakljflkajdkl</p>
+            </div>
+            <div id="news2" style="justify-items: left;">
+                <p>alfakljflkajdkl</p>
 
-        <h3>여기어때 소식</h3>
+            </div>
+            <div style="clear:both;"></div>
+       </div>            
+       
+    
+    
+       <div style="display: flex; justify-content: left;"><h2>이벤트</h2></div>
+
+        <div class="main_event">
+            <div >
+                <a href="./more/eventView/1.html">
+                    <img src="./image/main/event1.jpg" style="width: 100%;">
+                </a>
+            </div>
+            <div style="clear:both;"></div>
+
+
+        </div>
+
 
         <footer>
 
