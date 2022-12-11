@@ -6,17 +6,30 @@
         <title>Index</title>
 
         <style>
-            .main_img{
-                height: 500px;
-                background-image: url("image/main/mainspot_221201.jpg");
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center;
-                overflow: hidden;
+            body{
+                margin:0 auto;
                 display: flex;
+                display: block;
                 justify-content: center;
             }
+            ul li{
+                display: inline; 
+                list-style: none; 
+                float: left;
+            }
+            ul li a{text-decoration: none; color: black;}
+            p{color: black; text-decoration: none;}
 
+            /* top image */
+            .main_img{
+                overflow: hidden;
+                display: flex;
+                justify-content: center; 
+                text-align: center;
+                height: auto;
+            }
+
+            /* icons part */
             div.main_icons{  
                 overflow: hidden;
                 background-color: rgb(245, 244, 244);
@@ -30,55 +43,85 @@
                 list-style-type: none; 
                 text-align: center;
                 display: flex;
-                justify-content: center;            }
-            .main_icons ul li{    margin: 20 auto; padding: 16px;}
+                justify-content: center;            
+            }
+            .main_icons ul li{    
+                margin: 20 auto; padding: 0 16px;
+                /* letter-spacing: 10px; */
+            }
             .main_icons img{width: 40px; height: 40px;}
-            ul li{
-                display: inline; 
-                list-style: none; 
-                float: left;
-            }
-            ul li a{text-decoration: none; color: black;}
+
+           
+
+            /* news section */
             .main_news{
-                overflow: hidden;
-                margin: 0 auto;
-                display: flex;
-                justify-content: center;
-            }
-            
-            #news1 {
-                /* background-image: url(./image/main/news_banner1.png);
-                background-position: left;
-                background-size: contain;
-                background-repeat: no-repeat; */
-                /* width: 50%; */
-                border: 1px solid rgb(214, 214, 214);
-                overflow: hidden;
-                float: left;
-                display: flex;
-                justify-content: center;
-            }
-            #news2{
-                /* background-image: url(./image/main/news_banner1.png);
-                background-position: left;
-                background-size: contain;
-                background-repeat: no-repeat; */
-                /* width: 50%; */
-                border: 1px solid rgb(214, 214, 214);
                 overflow: hidden; 
                 display: flex;
-                justify-content: center;           
+                justify-content: center;
+                height: 10%;
+            }
+            h2{
+                font-size: 16px;
+            }
+            .main_news ul li{
+                border: 1px solid rgb(97, 97, 97);
+                margin-right: 40px;
+            }
+            .main_news span{
+                width: 400px;
+            }
+            .main_news span p{
+                padding-left: 10px;
+                float: right;
+                padding-right: 10px;
+            }
+
+            /* download */
+            .main_down{
+                height: 350px;
+                background-image: url(./image/main/bg_appdown.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                display: flex;
+                justify-content: center;
+                position: relative;
+            }
+            .main_down p{
+                position: absolute;
+                font-size: 20px;
+                top: 40%;
+                transform: translate(0,-50%);
             }
             
-            #news1 img{width: 150px; height: 150px;}
-            #news1 p{color: black; text-decoration: none;}
-            #news2 img{width: 150px; height: 150px;}
+            
+
+            /* event section */
             .main_event{
                 overflow: hidden;
                 margin: 0 auto;
                 display: flex;
                 justify-content: center;
+                height: 7%;
             }
+
+            /* advertisement*/
+            .main_ad{
+                overflow: hidden; 
+                display: flex;
+                justify-content: center;
+                height: 10%;
+            }
+            .main_ad ul li{
+                border: 1px solid rgb(97, 97, 97);
+                margin-right: 40px;
+                float: left;
+            }
+            .main_ad img{
+                width: 400px;
+            }
+            
+        
            
         </style>
 
@@ -91,8 +134,11 @@
         <header>
 
         </header>
-        <div class="main_img" style="background-image: url(./image/main/mainspot_221201.jpg);">
-            <a href="./more/eventView/6.html"></a>
+        <div class="main_img" >
+            <a href="./more/eventView/6.html" >
+                <img src="./image/main/mainspot_221201.jpg" style="width:100%; ">
+            </a>
+            <div style="clear:both;"></div>
         </div>
         <div class="main_icons">
             <ul>
@@ -134,41 +180,79 @@
                 </li>
             </ul>
             <br>
-        </div>
-        <h2 style="display: flex; justify-content: left;">여기어때 소식</h2>
-       <div class="main_news">
-            <span id="news1">
-                <img src="./image/main/news_banner1.png">
-                <p>akjdfkjadkljfad</p>
-            </span>
-            <span id="news2">
-                <img src="./image/main/news_banner1.png">
-                <p>akjdfkjadkljfad</p>
-            </span>
-            <!-- <div id="news1">
-                <p>alfakljflkajdkl</p>
-            </div> -->
-            <!-- <div id="news2" style="justify-items: left;">
-                <p>alfakljflkajdkl</p>
-
-            </div>
-            <div style="clear:both;"></div> -->
-       </div>            
+        </div>    
+        
+        
+        <div style="display: flex; justify-content: left; margin-left: 10%;"><h2>여기어때 소식</h2></div>
+        <div class="main_news">
+            <ul>
+                <li>
+                    <span>
+                        <img src="./image/main/news_banner1.png" style="left:0; height: 95px; width: 95px; top: 5px;"> 
+                        <p><strong>여기어때 비즈니스</strong>
+                        <br>출장부터 복지까지 
+                        <br>여기어때 비즈니스로 스마트하게</p>
+                        
+                    </span>
+                   
+                </li>
+                <li>
+                    <span>
+                        <img src="./image/main/news_re_jalnan.png" style="left:0; height: 95px; width: 95px; top: 5px;"> 
+                        <p><strong>여기어때 서체 출시</strong>
+                        <br>젊고 당당한 여기어때 잘난체  
+                        <br>지금 다운로드 받으세요!</p> 
+                    </span>
+                      
+                </li>
+            </ul>
+        </div>            
        
-    
-    
-       <div style="display: flex; justify-content: left;"><h2>이벤트</h2></div>
 
+        <div class="main_down">
+            <p >
+                앱 다운받고 <strong>더 많은 혜택</strong> 받으세요
+            </p>
+            <a href="" style="position:absolute; top:65%; transform: translate(-50%,-65%);">
+                <img src="./image/main/down_playstore.png" style="width: 150px;">
+            </a>
+            <a href="" style="position:absolute; top:65%; transform: translate(50%,-65%);">
+                <img src="./image/main/down_appstore.png" style="width:150px;">
+            </a>
+        </div>
+
+
+        <div style="display: flex; justify-content: left; margin-left: 10%;"><h2>이벤트</h2></div>
         <div class="main_event">
-            <div >
                 <a href="./more/eventView/1.html">
                     <img src="./image/main/event1.jpg" style="width: 100%;">
                 </a>
-            </div>
+                <!-- <a href="./more/eventView/2.html">
+                    <img src="./image/main/event2.jpg" style="width: 100%;">
+                </a>
+                <a href="./more/eventView/3.html">
+                    <img src="./image/main/event3.jpg" style="width: 100%;">
+                </a> -->
             <div style="clear:both;"></div>
-
-
         </div>
+
+        
+        <div class="main_ad">
+            <ul>
+                <li>
+                    <span>
+                        <img src="./image/main/ad_mo_01_171013.png" > 
+
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <img src="./image/main/ad_mo_02_171013.png" >          
+
+                    </span>
+                </li>
+            </ul>
+        </div>            
 
 
         <footer>
