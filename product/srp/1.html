@@ -7,8 +7,27 @@
             ul{list-style-type: none;}
             li{list-style: none; float: left; margin-right: 20px;}
             ul li a{text-decoration: none; color: black; }
+
+            div.srp1_top{
+                background-color: rgb(255, 53, 53);
+                padding: 24px;
+                margin: 0;
+            }
+            div.srp1_top h2{
+                color: white;
+            }
+            #top_location p{color: white; float: left; vertical-align: text-top;}
+            #top_location button{
+                background-color: rgba(0, 0, 0, 0.091); 
+                color: white; 
+                border: 1px solid rgba(0, 0, 0, 0.194);
+                margin-top: 15px;
+                margin-left: 10px;
+            }
+
+            div.srp1{margin: 16px;}
             a:hover{color: red;}
-            .tab{display:flex;justify-content: center; overflow: hidden; margin:0 auto;}
+            .tab{display:flex;justify-content: left; overflow: hidden; margin:0;}
             .sub{ background-color: rgb(247, 247, 247);}
 
             .contents{margin: 0 auto;}
@@ -34,60 +53,110 @@
         </style>
     </head>
     <body>
-        <!--  -->
-        <div class="tab">
-            <ul>
-                <li>
-                    <a href="./1.html">
-                        <p>모텔</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="./1.html">
-                        <p>호텔&리조트</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="./1.html">
-                        <p>펜션</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="./1.html">
-                        <p>게스트하우스</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="./1.html">
-                        <p>캠핑</p>
-                    </a>
-                </li>
+        <div class="srp1_top">
+            <h2>내 주변</h2>
+            <div style="display: inline;">
+                <div id="top_location">
+                    <p>서울ㄹㄹㄹ</p>
+                    <button type="button" >내 위치 설정</button>
+                </div>
+                <div>
 
-            </ul>
+                </div>
+            </div>
         </div>
-        <!-- <div class="selection">
-            <ul>
-                <li>
-                    <div><p>상세조건</p></div>
-                </li>
-            </ul>
-        </div> -->
-        <div class="sub">
-            <p style="text-align: left; color: rgb(83, 83, 83);"><strong>TOP 추천</strong></p>
-            <p style="text-align: right; color: rgb(189, 189, 189); ">광고 ?</p>
-        </div>
-        <div class="contents">
-            <ul>
-                <li>
-                    <div id="content">
-                        <span></span>
-                        <p class="name"><strong>명동 뉴서울호텔</strong></p>
-                        <p class="reviews">추천해요(420)</p>
-                        <p class="location">153m|중구 태평로 1가</p>
-                        <p class="reservation">예약취소가능</p>
-                    </div>
-                </li>
-            </ul>
+        <!--  -->
+        <div class="srp1">
+
+            <div class="tab">
+                <ul>
+                    <li>
+                        <a href="./1.html">
+                            <p>모텔</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./1.html">
+                            <p>호텔&리조트</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./1.html">
+                            <p>펜션</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./1.html">
+                            <p>게스트하우스</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./1.html">
+                            <p>캠핑</p>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <hr>
+            <!-- <div class="selection">
+                <ul>
+                    <li>
+                        <div><p>상세조건</p></div>
+                    </li>
+                </ul>
+            </div> -->
+            <div class="sub">
+                <p style="text-align: left; color: rgb(83, 83, 83);"><strong>TOP 추천</strong></p>
+                <p style="text-align: right; color: rgb(189, 189, 189); ">광고 ?</p>
+            </div>
+            <div class="contents">
+                <ul>
+                    <li>
+                        <div id="content">
+                            <span></span>
+                            <p class="name"><strong>명동 뉴서울호텔</strong></p>
+                            <p class="reviews">추천해요(420)</p>
+                            <p class="location">153m|중구 태평로 1가</p>
+                            <p class="reservation">예약취소가능</p>
+                            <p style="justify-content: right;">
+                                대실 <strong>40,000원</strong><br>
+                                숙박 <strong>50,000원</strong>
+                            </p>
+                        </div>
+                        <hr>
+                    </li>
+                    <li>
+                        <div id="content">
+                            <span></span>
+                            <p class="name"><strong>명동 뉴서울호텔</strong></p>
+                            <p class="reviews">추천해요(420)</p>
+                            <p class="location">153m|중구 태평로 1가</p>
+                            <p class="reservation">예약취소가능</p>
+                            <p style="justify-content: right;">
+                                대실 <strong>40,000원</strong><br>
+                                숙박 <strong>50,000원</strong>
+                            </p>
+                        </div>
+                        <hr>
+                    </li>
+                    <li>
+                        <div>
+                            <div id="content">
+                                <span></span>
+                                <p class="name"><strong>명동 뉴서울호텔</strong></p>
+                                <p class="reviews">추천해요(420)</p>
+                                <p class="location">153m|중구 태평로 1가</p>
+                                <p class="reservation">예약취소가능</p>
+                                <p style="justify-content: right;">
+                                    대실 <strong>40,000원</strong><br>
+                                    숙박 <strong>50,000원</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </body>
 </html>
