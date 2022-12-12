@@ -10,60 +10,87 @@
     </head>
 
     <body onload="loaded()">
+        <div class="header_bg"></div>
+        <div class="top_header_bg"></div>
         <header>
             <div class="top_header">
-
+                <button id="btn_more"></button>
+                <a href="../../index.html" id="logo"><img src="../../image/logo_white.svg" alt="여기어때"/></a>
+                <ul id="top_nav">
+                    <li><a href="../srp/1.html"><span>내주변</span></a></li>
+                    <li><a href="../../my/reservations.html"><span>예약내역</span></a></li>
+                    <li id="more">
+                        <span>더보기</span>
+                        <ul id="top_nav_submenu">
+                            <li><a href="../../more/notice.html">공지사항</a></li>
+                            <li><a href="../../more/event.html">이벤트</a></li>
+                            <li><a href="../../more/faq.html">자주 묻는 질문</a></li>
+                            <li>1:1 문의</li>
+                            <li>약관 및 정책</li>
+                        </ul>
+                    </li>
+                    <li><a href="../../user/login.html"><span>로그인</span></a></li>
+                </ul>
+                <span></span>
             </div>
             <div class="sub_header">
                 <h1>경기지역편</h1>
-                <h4 class="filter_label">경기 > 경기 인기숙소</h4>
-                <div class="filter_box">
-                    <ul class="filter_city">
-                        <li>서울</li>
-                        <li>경기</li>
-                        <li>인천</li>
-                        <li>강원</li>
-                        <li>제주</li>
-                    </ul>
-                    <ul class="filter_city_child" style="display: none;">
-                        <li><a href="./1.html">서울 인기숙소 <span class="hot">HOT</span></a></li>
-                        <li><a href="../search/1/1001.html">강남/역삼/삼성/논현</a></li>
-                        <li><a href="../search/1/1002.html">서초/신사/방배</a></li>
-                        <li><a href="../search/1/1003.html">잠실/방이</a></li>
-                        <li><a href="../search/1/1004.html">잠실새내/신천</a></li>
-                        <li><a href="../search/1/1005.html">영등포/여의도</a></li>
-                    </ul> 
-                    <ul class="filter_city_child">
-                        <li><a href="./2.html">경기 인기숙소 <span class="hot">HOT</span></a></li>
-                        <li><a href="../search/1/1021.html">수원/인계</a></li>
-                        <li><a href="../search/1/1022.html">수원시청/권선/영통</a></li>
-                        <li><a href="../search/1/1023.html">수원역/세류/팔달문/구운/장안</a></li>
-                        <li><a href="../search/1/1024.html">대부도/제부도</a></li>
-                        <li><a href="../search/1/1025.html">안성/평택/송탄</a></li>
-                    </ul>
-                    <ul class="filter_city_child" style="display: none;">
-                        <li><a href="./3.html">인천 인기숙소 <span class="hot">HOT</span></a></li>
-                        <li><a href="../search/1/1045.html">부평</a></li>
-                        <li><a href="../search/1/1046.html">주안</a></li>
-                        <li><a href="../search/1/1047.html">구월/소래포구</a></li>
-                        <li><a href="../search/1/1048.html">동암/간석</a></li>
-                        <li><a href="../search/1/1049.html">을왕리/인천공항</a></li>
-                    </ul>
-                    <ul class="filter_city_child" style="display: none;">
-                        <li><a href="./4.html">강원 인기숙소 <span class="hot">HOT</span></a></li>
-                        <li><a href="../search/1/1056.html">강릉역/교동택지/옥계</a></li>
-                        <li><a href="../search/1/1057.html">경포대/사천/주문진</a></li>
-                        <li><a href="../search/1/1058.html">양양/낙산/하조대/인제</a></li>
-                        <li><a href="../search/1/1059.html">속초/설악/동명항/고성</a></li>
-                        <li><a href="../search/1/1060.html">춘천/홍천/철원/화천</a></li>
-                        <li><a href="../search/1/1061.html">원주/횡성</a></li>
-                    </ul>
-                    <ul class="filter_city_child" style="display: none;">
-                        <li><a href="./5.html">제주 인기숙소 <span class="hot">HOT</span></a></li>
-                        <li><a href="../search/1/1064.html">제주시</a></li>
-                        <li><a href="../search/1/1065.html">애월/협재</a></li>
-                        <li><a href="../search/1/1067.html">서귀포/마라도</a></li>
-                    </ul>
+                <div class="filter_label">
+                    <p>경기 > 경기 인기숙소</p>
+                    <div class="filter_box">
+                        <div class="filter_title"><!-- 모바일 전용 -->
+                            <p>지역 선택</p>
+                            <button id="btn_cancel"></button>
+                        </div>
+                        <div class="filter_content">
+                            <ul class="filter_city">
+                                <li>서울</li>
+                                <li>경기</li>
+                                <li>인천</li>
+                                <li>강원</li>
+                                <li>제주</li>
+                            </ul>
+                            <ul class="filter_city_child">
+                                <li><a href="./1.html">서울 인기숙소 <span class="hot">HOT</span></a></li>
+                                <li><a href="../search/1/1001.html">강남/역삼/삼성/논현</a></li>
+                                <li><a href="../search/1/1002.html">서초/신사/방배</a></li>
+                                <li><a href="../search/1/1003.html">잠실/방이</a></li>
+                                <li><a href="../search/1/1004.html">잠실새내/신천</a></li>
+                                <li><a href="../search/1/1005.html">영등포/여의도</a></li>
+                            </ul> 
+                            <ul class="filter_city_child" style="display: none;">
+                                <li><a href="./2.html">경기 인기숙소 <span class="hot">HOT</span></a></li>
+                                <li><a href="../search/1/1021.html">수원/인계</a></li>
+                                <li><a href="../search/1/1022.html">수원시청/권선/영통</a></li>
+                                <li><a href="../search/1/1023.html">수원역/세류/팔달문/구운/장안</a></li>
+                                <li><a href="../search/1/1024.html">대부도/제부도</a></li>
+                                <li><a href="../search/1/1025.html">안성/평택/송탄</a></li>
+                            </ul>
+                            <ul class="filter_city_child" style="display: none;">
+                                <li><a href="./3.html">인천 인기숙소 <span class="hot">HOT</span></a></li>
+                                <li><a href="../search/1/1045.html">부평</a></li>
+                                <li><a href="../search/1/1046.html">주안</a></li>
+                                <li><a href="../search/1/1047.html">구월/소래포구</a></li>
+                                <li><a href="../search/1/1048.html">동암/간석</a></li>
+                                <li><a href="../search/1/1049.html">을왕리/인천공항</a></li>
+                            </ul>
+                            <ul class="filter_city_child" style="display: none;">
+                                <li><a href="./4.html">강원 인기숙소 <span class="hot">HOT</span></a></li>
+                                <li><a href="../search/1/1056.html">강릉역/교동택지/옥계</a></li>
+                                <li><a href="../search/1/1057.html">경포대/사천/주문진</a></li>
+                                <li><a href="../search/1/1058.html">양양/낙산/하조대/인제</a></li>
+                                <li><a href="../search/1/1059.html">속초/설악/동명항/고성</a></li>
+                                <li><a href="../search/1/1060.html">춘천/홍천/철원/화천</a></li>
+                                <li><a href="../search/1/1061.html">원주/횡성</a></li>
+                            </ul>
+                            <ul class="filter_city_child" style="display: none;">
+                                <li><a href="./5.html">제주 인기숙소 <span class="hot">HOT</span></a></li>
+                                <li><a href="../search/1/1064.html">제주시</a></li>
+                                <li><a href="../search/1/1065.html">애월/협재</a></li>
+                                <li><a href="../search/1/1067.html">서귀포/마라도</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -157,7 +184,7 @@
                 </li>
             </ul>
         </div>
-        <button class="btn_go_top">△</button>
+        <button class="btn_go_top"></button>
         <footer>
             
         </footer>
