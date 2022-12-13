@@ -18,7 +18,8 @@ button{
 .header_bg{
       top: 0;
       height: 211px;
-      background-color: rgb(247,50,63);
+      background-image: url("../image/seoul.jpg");
+      background-size: cover;
 }
 .top_header_bg{
       position: fixed;
@@ -181,21 +182,9 @@ header{
       background-color: rgb(243,35,90);
 }
 
-#content_wrap{
-      display: flex;
-      width: 1024px;
-      margin: 0px auto;
-}
-aside{
-      width: 296px;
-      height: 1460px;
-      background-color: gray;
-      margin-top: 36px;
-      margin-left: 30px;
-      margin-right: 36px;
-}
 #content{
       width: 635px;
+      margin: 0px auto;
 }
 #content_top{
       display: flex;
@@ -381,12 +370,6 @@ aside{
             padding-bottom: 10px;
       }
 
-      aside{
-            display: none;
-      }
-      #content_wrap{
-            width: 100%;
-      }
       #content{
             width: 100%;
             margin: 0px 0px;
