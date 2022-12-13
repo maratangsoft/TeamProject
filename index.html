@@ -4,129 +4,24 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Index</title>
-
-        <style>
-            body{
-                margin:0 auto;
-                display: flex;
-                display: block;
-                justify-content: center;
-            }
-            ul li{
-                display: inline; 
-                list-style: none; 
-                float: left;
-            }
-            ul li a{text-decoration: none; color: black;}
-            p{color: black; text-decoration: none;}
-
-            /* top image */
-            .main_img{
-                overflow: hidden;
-                display: flex;
-                justify-content: center; 
-                text-align: center;
-                height: auto;
-            }
-
-            /* icons part */
-            div.main_icons{  
-                overflow: hidden;
-                background-color: rgb(245, 244, 244);
-                text-align: center;
-                margin:0 auto;
-                display: flex;
-                justify-content: center;
-            }
-            div.main_icons ul{
-                margin: 0 auto;
-                list-style-type: none; 
-                text-align: center;
-                display: flex;
-                justify-content: center;            
-            }
-            .main_icons ul li{    
-                margin: 20 auto; padding: 0 16px;
-                /* letter-spacing: 10px; */
-            }
-            .main_icons img{width: 40px; height: 40px;}
-
-           
-
-            /* news section */
-            .main_news{
-                overflow: hidden; 
-                display: flex;
-                justify-content: center;
-                height: 10%;
-            }
-            h2{
-                font-size: 16px;
-            }
-            .main_news ul li{
-                border: 1px solid rgb(97, 97, 97);
-                margin-right: 40px;
-            }
-            .main_news span{
-                width: 400px;
-            }
-            .main_news span p{
-                padding-left: 10px;
-                float: right;
-                padding-right: 10px;
-            }
-
-            /* download */
-            .main_down{
-                height: 350px;
-                background-image: url(./image/main/bg_appdown.png);
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: contain;
-                display: flex;
-                justify-content: center;
-                position: relative;
-            }
-            .main_down p{
-                position: absolute;
-                font-size: 20px;
-                top: 40%;
-                transform: translate(0,-50%);
-            }
-            
-            
-
-            /* event section */
-            .main_event{
-                overflow: hidden;
-                margin: 0 auto;
-                display: flex;
-                justify-content: center;
-                height: 7%;
-            }
-
-            /* advertisement*/
-            .main_ad{
-                overflow: hidden; 
-                display: flex;
-                justify-content: center;
-                height: 10%;
-            }
-            .main_ad ul li{
-                border: 1px solid rgb(97, 97, 97);
-                margin-right: 40px;
-                float: left;
-            }
-            .main_ad img{
-                width: 400px;
-            }
-            
-        
-           
-        </style>
+        <link type="text/css" rel="stylesheet" href="./css/main.css">
 
         <script>
-            
+            slide();
+            function slide(){
+                var img=document.getElementsByClassName("img");
+                var count=img.length;
+                var i;
+                for(i=0;i<count;i++){
+                    img[i].style.display="none"
+                }
+                var index=1; 
+                if(index>count){
+                    index=1;
+                }
+                img[index-1].style.display="block";
+                setTimeout(slide,3000);
+            }
         </script>
     </head>
 
@@ -136,7 +31,7 @@
         </header>
         <div class="main_img" >
             <a href="./more/eventView/6.html" >
-                <img src="./image/main/mainspot_221201.jpg" style="width:100%; ">
+                <!-- <img src="./image/main/mainspot_221201.jpg" style="width:100%; "> -->
             </a>
             <div style="clear:both;"></div>
         </div>
@@ -225,15 +120,14 @@
         <div style="display: flex; justify-content: left; margin-left: 10%;"><h2>이벤트</h2></div>
         <div class="main_event">
                 <a href="./more/eventView/1.html">
-                    <img src="./image/main/event1.jpg" style="width: 100%;">
+                    <img class="img" src="./image/main/event1.jpg" style="width: 100%;">
                 </a>
-                <!-- <a href="./more/eventView/2.html">
-                    <img src="./image/main/event2.jpg" style="width: 100%;">
+                <a href="./more/eventView/2.html">
+                    <img class="img" src="./image/main/event2.jpg" style="width: 100%;">
                 </a>
                 <a href="./more/eventView/3.html">
-                    <img src="./image/main/event3.jpg" style="width: 100%;">
-                </a> -->
-            <div style="clear:both;"></div>
+                    <img class="img" src="./image/main/event3.jpg" style="width: 100%;">
+                </a>
         </div>
 
         
