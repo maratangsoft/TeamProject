@@ -1,0 +1,45 @@
+ul{list-style-type: none;}
+li{list-style: none; float: left; margin-right: 20px;}
+ul li a{text-decoration: none; color: black; }
+
+div.srp1_top{
+    background-color: rgb(255, 53, 53);
+    padding: 24px;
+    margin: 0;
+}
+div.srp1_top h2{
+    color: white;
+}
+#top_location p{color: white; float: left; vertical-align: text-top;}
+#top_location button{
+    background-color: rgba(0, 0, 0, 0.091); 
+    color: white; 
+    border: 1px solid rgba(0, 0, 0, 0.194);
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+div.srp1{margin: 16px;}
+a:hover{color: red;}
+.tab{display:flex;justify-content: left; overflow: hidden; margin:0;}
+.sub{ background-color: rgb(247, 247, 247);}
+
+.contents{margin: 0 auto;}
+.contents ul li{background-color:rgb(253, 249, 232); width: 100%;}
+#content{
+   display: table;
+   padding: 16px; 
+}
+#content span{
+    height: 200px;
+    width: 100px;
+    background-image: url(../image/main/content1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: table-cell;
+    vertical-align: text-top;
+    background-position: left;
+}
+#content p{margin-left: 20px; }
+p.reviews{color: rgb(255, 208, 0);}
+p.reservation{color: rgb(196, 196, 196);}
