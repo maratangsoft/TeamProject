@@ -9,12 +9,15 @@
     <body>
         <div class="srp1_top">
             <div id="top" >
+                <img src="../../image/srp/ico_around.png" style="visibility:hidden; display:none;">
+
                 <div id="top_location">
                     <h2>내 주변</h2>
                     <p>서울ㄹㄹㄹ</p>
                     <button type="button" >내 위치 설정</button>
                 </div>
                 <div id="top_date">
+                    <img src="../../image/srp/ico_cal.png" >
                     <p>12.14~12.15 1박</p>
                 </div>
             </div>
@@ -64,33 +67,36 @@
                 </ul>
             </div> -->
             <div class="sub">
-                <p style="text-align: left; color: rgb(83, 83, 83);"><strong>TOP 추천</strong></p>
-                <p style="text-align: right; color: rgb(189, 189, 189); ">광고 ?</p>
+                <span style="text-align: left; color: rgb(83, 83, 83);"><strong>TOP 추천</strong></span>
+                <span id="ad" style="text-align: right; color: rgb(189, 189, 189); ">광고 ?</span>
             </div>
-            <div class="contents">
+        </div>
+        <div class="contents">
                 <ul>
                     <li>
-                        <div id="content">
-                            <span></span>
+                        <div id="content" >
+                            <span id="img"></span>
                             <p class="name"><strong>명동 뉴서울호텔</strong></p>
                             <p class="reviews">추천해요(420)</p>
                             <p class="location">153m|중구 태평로 1가</p>
                             <p class="reservation">예약취소가능</p>
-                            <p style="justify-content: right;">
+                            <p style="float: right;">
                                 대실 <strong>40,000원</strong><br>
                                 숙박 <strong>50,000원</strong>
                             </p>
-                        </div>
+                                                      
+                        </div>  
+                     
                         <hr>
                     </li>
                     <li>
                         <div id="content">
-                            <span></span>
+                            <span id="img"></span>
                             <p class="name"><strong>명동 뉴서울호텔</strong></p>
                             <p class="reviews">추천해요(420)</p>
                             <p class="location">153m|중구 태평로 1가</p>
                             <p class="reservation">예약취소가능</p>
-                            <p style="justify-content: right;">
+                            <p style="float: right;">
                                 대실 <strong>40,000원</strong><br>
                                 숙박 <strong>50,000원</strong>
                             </p>
@@ -100,20 +106,67 @@
                     <li>
                         <div>
                             <div id="content">
-                                <span></span>
+                                <span id="img"></span>
                                 <p class="name"><strong>명동 뉴서울호텔</strong></p>
                                 <p class="reviews">추천해요(420)</p>
                                 <p class="location">153m|중구 태평로 1가</p>
                                 <p class="reservation">예약취소가능</p>
-                                <p style="justify-content: right;">
+                               <p style="float:right;">
                                     대실 <strong>40,000원</strong><br>
                                     숙박 <strong>50,000원</strong>
                                 </p>
                             </div>
+                            
                         </div>
                     </li>
                 </ul>
-            </div>
         </div>
+        <div style="clear:both;"></div>
+
+        <footer>
+            <style>
+                footer{
+                    background-color: rgb(245,245,245);
+                    width: 100%; 
+                    padding: 40px 20px 20px 20px; 
+                    margin-top: 120px;
+                    color: #99999a;
+                }
+                footer div{
+                    font-size: 0.8em;
+                    margin-top: 3px;
+                    margin-bottom: 3px;
+                }
+                footer button{
+                    background-color: transparent;
+                    border: none;
+                    background-size: contain; 
+                    width: 24px; 
+                    height: 24px;
+                }
+                footer #btn_facebook{
+                    background-image: url(../../image/Facebook_logo.svg);
+                }
+                footer #btn_blog{
+                    background-image: url(../../image/blog_icon.svg);
+                }
+            </style>
+    
+            <div>회사소개 | 이용약관 | 개인정보처리방침 | 소비자 분쟁해결 기준 | 사업자 정보확인</div>
+            <div>여기어때 마케팅센터 | 액티비티 호스트센터 | HOTEL 여기어때 | 콘텐츠산업진흥법에의한 표시</div>
+            <br>
+            <div><b>고객행복센터 1670-6250</b> 오전 9시 - 새벽 3시</div>
+            <br>
+            <div>(주) 여기어때컴퍼니</div>
+            <div>주소 : 서울특별시 강남구 봉은사로 479, 479타워 11층 | 대표이사 : 정명훈 | 사업자등록번호: 742-86-00224</div>
+            <div>통신판매번호 : 2017-서울강남-01779 | 관광사업자 등록번호: 제1026-24호 | 전화번호 : 1670-6250 | 전자우편주소 : help@goodchoice.kr</div>
+            <div>(주) 여기어때컴퍼니는 통신판매중개자로서 통신판매의 당사자가 아니며, 상품의 예약, 이용 및 환불 등과 관련한 의무와 책임은 각 판매자에게 있습니다.</div>
+            <br>
+            <div>Copyright GC COMPANY Corp. All rights reserved.</div>
+            <br>
+            <hr>
+            <br>
+            <div><button id="btn_facebook"></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="btn_blog"></button></div>
+        </footer>
     </body>
 </html>

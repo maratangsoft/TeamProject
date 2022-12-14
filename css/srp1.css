@@ -27,38 +27,49 @@ div.srp1_top{
 }
 @media screen and (max-width:1024px) {
     div.srp1_top{background-color: white; margin: 0 auto; padding: 12px; margin-bottom: 0;}
-    #top { background-color: rgb(233, 233, 233); padding-bottom: 8px;}
-    #top_location{display: flex; flex-direction: column; justify-content: left; margin-left: 10%; float: left;}
+    #top { background-color: rgb(233, 233, 233); padding-bottom: 8px; margin-bottom: 0;}
+    #top_location{
+        display: flex; flex-direction: column; justify-content: left; margin-left: 10%; float: left; 
+    margin-bottom: 0;}
     #top_location h2{color: gray; font-size: 14px; margin-bottom: 0; }
-    #top_location p{color:black; font-size: 18px; float:left; margin-top: 0;} 
-    #top_location button{visibility: hidden;}
-    #top_date {display: flex; visibility: visible; justify-content: center;}
+    #top_location p{color:black; font-size: 18px; float:left; margin-top: 0; margin-bottom: 0;} 
+    #top_location button{visibility: hidden; display: none;}
+    img{visibility: visible;  height: 30px; width: 30px;}
 
+   
+    #top_date {display: flex; visibility: visible; justify-content: center; }
+    #top_date img{visibility: visible; height: 30px; width: 30px; vertical-align: middle; display: inline-block;}
  
+
+    #ad{float: right;}
 }
 @media screen and (max-width:1024px){
-    div.srp1{margin:0px; padding: 0px;}
-    .tab{padding: 0px; margin: 0px;}
+    div.srp1{margin-left: 0; padding-left: 0;}
+    div.srp1 ul{margin-left: 0; padding: 0 0 0 0; display: flex; justify-content: left;}
+    div.srp1.tab{display:block; margin-left: 0; text-align: left; justify-content: left;}
 }
 
 
 div.srp1{margin: 16px;}
 a:hover{color: red;}
-.tab{display:flex; justify-content: left; overflow: hidden; margin:0;}
-.sub{ background-color: rgb(247, 247, 247);}
+.tab{display:flex; justify-content: left; overflow: hidden; margin:0 auto; text-align: left;}
+.sub{ background-color: rgb(247, 247, 247); }
 
 .contents{margin: 0 auto;}
-.contents ul li{background-color:rgb(253, 249, 232); width: 100%;}
+.contents ul{margin: 0 auto;}
+.contents ul li{margin:0; background-color:rgb(253, 249, 232); width: 100%;}
 #content{
    display: table;
    padding: 16px; 
+   width: 100%;
+   margin:0;
 }
-#content span{
+#img{
     height: 200px;
     width: 100px;
     background-image: url(../image/main/content1.jpg);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size:auto;
     display: table-cell;
     vertical-align: text-top;
     background-position: left;

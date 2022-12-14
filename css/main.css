@@ -56,16 +56,23 @@ div.main_icons ul{
     display: flex;
     justify-content: center;
     height: 10%;
+    position: relative;
 }
-h2{
-    font-size: 16px;
+.main_news #head{
+    position:absolute;
+    display: block;
+    left: 0;
 }
 .main_news ul li{
     border: 1px solid rgb(97, 97, 97);
     margin-right: 40px;
+    display: flex;
+    justify-content: center;
 }
-.main_news span{
+.main_news span #news{
     width: 400px;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 .main_news span p{
     padding-left: 10px;
@@ -103,7 +110,15 @@ h2{
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    position: relative;
     height: 7%;
+}
+.container{
+    position: relative;
+}
+.events{display: flex; position: absolute; top: 0; left: 0;}
+.event{
+    text-align: center;
 }
 
 
