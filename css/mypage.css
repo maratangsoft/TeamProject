@@ -1,0 +1,35 @@
+@charset "utf-8";
+@media screen and(max-width:1024px) {
+    
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Pretendard', 'Apple SD Gothic Neo', '맑은 고딕', '맑은고딕', 'Malgun Gothic', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+header .point_header{
+    color: aqua;
+    background-color: aquamarine;
+}
+ul{
+    list-style: none;
+}
+h2{
+    color: white;
+    background-color: red;
+}
+button #point_btn {
+    color: white;
+    background-color: #1273e4;
+}
+.active {
+    font-size: 18px;
+    color: red;
+    font-weight: bold;
+}
