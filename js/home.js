@@ -17,6 +17,7 @@ function loaded(){
                   }
             }
       }
+
       // 모바일 전용
       if (window.innerWidth <= 1024){
             // 이벤트: 모바일에서 필터 누르면 필터목록 펼치기
@@ -28,8 +29,6 @@ function loaded(){
                   document.querySelector('.filter_box').setAttribute('style', 'display: none;');
             };
       }
-      
-      
       // 이벤트: 지역 필터에 마우스 올리면 세부지역 목록 표시
       for (let i=0; i<filterCities.length; i++){
             filterCities[i].onmouseover = () => {

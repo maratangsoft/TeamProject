@@ -269,6 +269,32 @@ header{
       text-align: center;
 }
 
+footer{
+      background-color: rgb(245,245,245);
+      width: 100%; 
+      padding: 40px 20px 20px 20px; 
+      margin-top: 120px;
+      color: #99999a;
+}
+footer div{
+      font-size: 0.8em;
+      margin-top: 3px;
+      margin-bottom: 3px;
+}
+footer button{
+      background-color: transparent;
+      border: none;
+      background-size: contain; 
+      width: 24px; 
+      height: 24px;
+}
+footer #btn_facebook{
+      background-image: url(../image/Facebook_logo.svg);
+}
+footer #btn_blog{
+      background-image: url(../image/blog_icon.svg);
+}
+
 @media screen and (max-width: 1024px) {
       .top_header_bg{
             position: absolute;
@@ -289,7 +315,14 @@ header{
       }
       .top_header #btn_more{
             display: inline-block;
+            top: 0;
             margin-left: 20px;
+      }
+      .top_header #logo{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            margin: 0px;
       }
       .top_header>#logo>img{
             content: url('../image/logo.svg');
