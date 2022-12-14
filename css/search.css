@@ -1,0 +1,404 @@
+*{
+      margin: 0px;
+      padding: 0px;
+      font-family: 'Pretendard', 'Apple SD Gothic Neo', '맑은 고딕', '맑은고딕', 'Malgun Gothic', sans-serif;
+}
+a{
+      text-decoration: none;
+      color: black;
+}
+ul{
+      list-style: none;
+}
+button{
+      border: none;
+      background-color: transparent;
+}
+
+.header_bg{
+      top: 0;
+      height: 211px;
+      background-color: rgb(247,50,63);
+}
+.top_header_bg{
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 72px;
+      z-index: 1;
+}
+header{
+      position: absolute;
+      top: 0px;
+      display: flex;
+      width: 100%;
+      height: 211px;
+      justify-content: center;
+}
+.top_header{
+      display: flex;
+      position: fixed;
+      top: 0px;
+      width: 1024px;
+      height: 72px;
+      z-index: 1;
+      align-items: center;
+      justify-content: space-between;
+}
+.top_header #btn_more{
+      display: none;
+      background-image: url('../image/hamburger.png');
+      background-size: contain;
+      width: 16px;
+      height: 16px;
+}
+.top_header #logo{
+      width: 95px;
+      margin-left: 20px;
+}
+.top_header img{
+      width: 95px;
+}
+.top_header #top_nav{
+      margin-right: 10px;
+}
+.top_header #top_nav>li{
+      display: inline-block;
+}
+.top_header>#top_nav span{
+      color: white;
+      padding: 5px;
+}
+.top_header #top_nav_submenu{
+      display: none;
+      position: absolute;
+      top: 50px;
+      right: 10px;
+      width: 120px;
+      height: 130px;
+      background-color: white;
+      padding: 20px;
+      z-index: 1;
+      box-shadow: 1px 1px 3px gray;
+      border-radius: 4px;
+      padding: 20px;
+}
+.top_header #more:hover #top_nav_submenu{
+      display: block;
+}
+.top_header #top_nav_submenu li{
+      color: black;
+      margin-top: 5px;
+      margin-bottom: 5px;
+}
+.top_header>span{
+      display: none;
+      width: 16px;
+      height: 16px;
+}
+
+.sub_header{
+      margin-top: 72px;
+      width: 1024px;
+      height: 211px;
+      padding: 0px auto;
+}
+.sub_header h1{
+      font-weight: normal;
+      font-size: 2.2em;
+      color: white;
+      margin-top: 20px;
+      margin-left: 20px;
+}
+.sub_header .filter_label{
+      top: 145px;
+      margin-top: 14px;
+      margin-left: 20px;
+}
+.sub_header .filter_label p{
+      font-weight: bold;
+      font-size: 1.2em;
+      color: white;
+}
+.sub_header .filter_box{
+      display: none;
+      position: absolute;
+      width: 360px;
+      height: 200px;
+      background-color: white;
+      padding: 20px;
+      z-index: 1;
+      box-shadow: 1px 1px 3px gray;
+      border-radius: 4px;
+}
+.sub_header .filter_label:hover .filter_box{
+      display: block;
+}
+.sub_header .filter_title{
+      display: none;
+      position: relative;
+      width: 100%;
+      height: 50px;
+      font-size: 2em;
+}
+.sub_header .filter_title>p{
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+}
+.sub_header .filter_title button{
+      background-image: url('../image/x.png');
+      background-size: contain;
+      float: inline-end;
+      width: 20px;
+      height: 20px;
+      margin-left: auto;
+}
+.sub_header .filter_content{
+      display: flex;
+      align-content: flex-start;
+}
+.sub_header .filter_city{
+      padding-right: 50px;
+      border-right: 1px solid lightgray;
+}
+.sub_header .filter_city li{
+      margin-top: 5px;
+      margin-bottom: 5px;
+}
+.sub_header .filter_city_child li{
+      padding-left: 20px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+}
+.sub_header .filter_box li:hover,.filter_box a:hover{
+      color: rgb(243,35,90);
+}
+.hot{
+      font-size: 0.6em;
+      color: white;
+      padding: 2px;
+      background-color: rgb(243,35,90);
+}
+
+#content_wrap{
+      display: flex;
+      width: 1024px;
+      margin: 0px auto;
+}
+aside{
+      width: 296px;
+      height: 1460px;
+      background-color: gray;
+      margin-top: 36px;
+      margin-left: 30px;
+      margin-right: 36px;
+}
+#content{
+      width: 635px;
+}
+#content_top{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+      margin-bottom: 10px;
+}
+#recommend{
+      font-size: 1.2em;
+      font-weight: bold;
+      opacity: 0.5;
+}
+#content ul{
+      background-color: black;
+}
+#content li{
+      position: relative;
+}
+#content a{
+      padding-bottom: 10px;
+}
+#content img{
+      opacity: 0.6;
+}
+#content .text_container{
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      color: white;
+      width: 635px;
+      height: 280px;
+}
+#content .event{
+      display: inline-block;
+      position: absolute;
+      font-size: 1.2em;
+      background-color: rgba(0, 0, 0, 0.5);
+      margin-top: 40px;
+      padding-left: 20px;
+}
+#content .info{
+      display: inline-block;
+      position: absolute;
+      margin-left: 20px;
+      bottom: 20px;
+}
+#content .info .name{
+      font-weight: bold;
+      font-size: 1.5em;
+      margin-bottom: 6px;
+}
+#content .info .score{
+      font-size: 1.2em;
+      color: orange;
+      margin-bottom: 6px;
+}
+#content .info .location{
+      font-size: 1.2em;
+}
+#content .price{
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      text-align: right;
+}
+#content .reserve{
+      background-color: rgb(248,113,111);
+      font-size: 0.8em;
+      padding: 1px;
+}
+.btn_go_top{
+      position: fixed;
+      width: 35px;
+      height: 35px;
+      bottom: 20px;
+      right: 20px;
+      opacity: 0.7;
+      background-image: url('../image/up-arrow.png');
+      background-color: lightgray;
+      background-size: contain;
+      border-color: rgba(200, 200, 200, 0.5);
+      text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+      .top_header_bg{
+            position: absolute;
+            top: 44px;
+            height: 50px;
+            background-color: white;
+            z-index: 1;
+      }
+      .header_bg{
+            margin-top: 44px;
+      }
+      .top_header{
+            position: inherit;
+            width: 100%;
+            height: 44px;
+            background-color: white;
+            justify-content: space-between;
+      }
+      .top_header #btn_more{
+            display: inline-block;
+            margin-left: 20px;
+      }
+      .top_header>#logo>img{
+            content: url('../image/logo.svg');
+      }
+      .top_header #top_nav{
+            display: none;
+      }
+      .top_header>span{
+            display: inline-block;
+            margin-right: 20px;
+      }
+
+      .sub_header{
+            margin-top: 44px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+      }
+      .sub_header h1{
+            font-size: 1.5em;
+            margin-top: 115px;
+            margin-left: 0px;
+      }
+      .sub_header .filter_label{
+            position: absolute;
+            top: -6px;
+            width: 92%;
+            margin-left: 4%;
+            margin-right: 4%;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            font-size: 0.8em;
+            background-color: lightgray;
+            border-radius: 6px;
+            z-index: 1;
+      }
+      .sub_header .filter_label:hover .filter_box{
+            display: none;
+      }
+      .sub_header .filter_label p{
+            color: black;
+      }
+      .sub_header .filter_box{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+      }
+      .sub_header .filter_title{
+            display: flex;
+            align-items: center;
+      }
+      .sub_header .filter_city{
+            width: 25%;
+            padding-left: 10px;
+            padding-right: 0px;
+      }
+      .sub_header .filter_city li{
+            font-size: 1.2em;
+            width: 100%;
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+            padding-top: 10px;
+            padding-bottom: 10px;
+      }
+      .sub_header .filter_city_child{
+            width: 72%;
+      }
+      .sub_header .filter_city_child li{
+            font-size: 1.2em;
+            width: 100%;
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+            background-color: lightgray;
+            padding-top: 10px;
+            padding-bottom: 10px;
+      }
+
+      aside{
+            display: none;
+      }
+      #content_wrap{
+            width: 100%;
+      }
+      #content{
+            width: 100%;
+            margin: 0px 0px;
+      }
+      #content a{
+            width: 100%;
+      }
+      #content img{
+            width: 100%;
+            object-fit: cover;
+      }
+      #content .text_container{
+            width: 100%;
+      }
+}
