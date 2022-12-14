@@ -1,0 +1,16 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Pretendard', 'Apple SD Gothic Neo', '맑은 고딕', '맑은고딕', 'Malgun Gothic', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style: none;
+}
+button{
+    border: none;
+    background-color: transparent;
+}
