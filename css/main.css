@@ -92,6 +92,10 @@ h2{
     transform: translate(0,-50%);
 }
 
+@media screen and (max-width:1024px){
+    .main_down{visibility: hidden; display: none;}
+    
+}
 
 /* event section */
 .main_event{
