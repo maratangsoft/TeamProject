@@ -7,10 +7,13 @@ div.srp1_top{
     padding: 24px;
     margin: 0;
 }
-div.srp1_top h2{
-    color: white;
+#top_location h2{
+    color: white;   
+    font-size: 28px;
+
 }
-#top_location p{color: white; float: left; vertical-align: text-top;}
+
+#top_location p{color: white; float: left; vertical-align: text-top; font-size: 18px;}
 #top_location button{
     background-color: rgba(0, 0, 0, 0.091); 
     color: white; 
@@ -18,6 +21,20 @@ div.srp1_top h2{
     margin-top: 15px;
     margin-left: 10px;
 }
+#top_date{
+    visibility:hidden;
+    display: none;
+}
+@media screen and (max-width:1024px) {
+    div.srp1_top{background-color: white; margin: 0 auto; height: 100px; padding: 12px;}
+    #top { background-color: rgb(219, 219, 219); }
+    #top_location{display: inline-flex; justify-content: left; margin-left: 10%; float: left;}
+    #top_location h2{color: gray; font-size: 14px; }
+    #top_location p{color:black; font-size: 18px;} 
+    #top_location button{visibility: hidden;}
+    #top_date {display: flex; visibility: visible; justify-content: center;}
+}
+
 
 div.srp1{margin: 16px;}
 a:hover{color: red;}
