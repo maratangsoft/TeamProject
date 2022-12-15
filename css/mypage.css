@@ -66,9 +66,10 @@ nav {
     float: left;
     width: 238px;
     padding-left: 31px;
+    padding-top: 51px;
 }
 .navi li{
-    margin-bottom: 18px;
+    margin-bottom: 26px;
     font-size: 18px  Pretendard;
 }
 .navi a {
@@ -122,7 +123,37 @@ nav {
     margin-right: 31px;
     padding-top: 54px;
 }
-
+.list-none {
+    background: #fff;
+    padding-top: 125px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    height: 373px;
+}
+.list-none p {
+    display: block;
+    padding-top: 16px;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.56);
+}
+.btn_red {
+    display: inline-block;
+    border: 1px solid rgb(242, 17, 76);
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: normal;
+    color: rgb(230, 28, 81);
+    text-align: center;
+    box-sizing: border-box;
+    vertical-align: top;
+    width: 200px;
+    height: 48px;
+    margin-top: 44px;
+    line-height: 48px;
+}
 .noti-confirm-button {
     width: 144px;
     height: 52px;
@@ -145,5 +176,19 @@ nav {
     box-sizing: border-box;
     margin-left: 21%;
     padding: 1px 6px;
-    
+}
+#usercoupon {
+    width: 724px;
+    margin-right: 31px;
+    padding-top: 54px;
+    height: auto;
+    border: none;
+    font-size: 18px;
+    line-height: 1;
+}
+footer {
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -200px;
 }
