@@ -7,6 +7,11 @@
     padding: 0px;
     font-family: 'Pretendard', 'Apple SD Gothic Neo', '맑은 고딕', '맑은고딕', 'Malgun Gothic', sans-serif;
 }
+a {
+    text-decoration: none;
+    color: #0000008f;
+    font-size: 18px  Pretendard;
+}
 body {
     margin: 0;
     padding: 0;
@@ -29,7 +34,15 @@ button #point_btn {
     background-color: #1273e4;
 }
 .active {
-    font-size: 18px;
     color: red;
     font-weight: bold;
+}
+nav {
+    display: block;
+    float: left;
+    width: 238px;
+    padding-left: 31px;
+}
+li {
+    margin-bottom: 18px;
 }
