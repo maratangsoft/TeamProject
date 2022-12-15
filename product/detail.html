@@ -9,136 +9,10 @@
         <script src="../js/detail.js"></script>
     </head>
 
-    <body>
-        <div class="header_bg"></div>
-        <div class="top_header_bg"></div>
+    <body onload="loaded()">
         <header>
+            <div class="top_header_bg"></div>
             <div class="top_header">
-                <style>
-                    .header_bg{
-                        top: 0;
-                        height: 211px;
-                        background-image: url("../image/seoul.jpg");
-                        background-size: cover;
-                    }
-                    .top_header_bg{
-                        position: fixed;
-                        top: 0;
-                        width: 100%;
-                        height: 72px;
-                        z-index: 1;
-                        box-shadow: 0px 3px 3px gray;
-                    }
-                    header{
-                        position: absolute;
-                        top: 0px;
-                        display: flex;
-                        width: 100%;
-                        height: 211px;
-                        justify-content: center;
-                    }
-                    .top_header{
-                        display: flex;
-                        position: fixed;
-                        top: 0px;
-                        width: 1024px;
-                        height: 72px;
-                        z-index: 1;
-                        align-items: center;
-                        justify-content: space-between;
-                    }
-                    .top_header #btn_more{
-                        display: none;
-                        background-image: url('../image/hamburger.png');
-                        background-size: contain;
-                        width: 16px;
-                        height: 16px;
-                    }
-                    .top_header #logo{
-                        width: 95px;
-                        margin-left: 20px;
-                    }
-                    .top_header img{
-                        width: 95px;
-                    }
-                    .top_header #top_nav{
-                        margin-right: 10px;
-                    }
-                    .top_header #top_nav>li{
-                        display: inline-block;
-                    }
-                    .top_header>#top_nav span{
-                        color: white;
-                        padding: 5px;
-                    }
-                    .top_header #top_nav_submenu{
-                        display: none;
-                        position: absolute;
-                        top: 50px;
-                        right: 10px;
-                        width: 120px;
-                        height: 130px;
-                        background-color: white;
-                        padding: 20px;
-                        z-index: 1;
-                        box-shadow: 1px 1px 3px gray;
-                        border-radius: 4px;
-                        padding: 20px;
-                    }
-                    .top_header #more:hover #top_nav_submenu{
-                        display: block;
-                    }
-                    .top_header #top_nav_submenu li{
-                        color: black;
-                        margin-top: 5px;
-                        margin-bottom: 5px;
-                    }
-                    .top_header>span{
-                        display: none;
-                        width: 16px;
-                        height: 16px;
-                    }
-                    @media screen and (max-width: 1024px) {
-                        .top_header_bg{
-                            position: absolute;
-                            top: 44px;
-                            height: 50px;
-                            background-color: white;
-                            z-index: 1;
-                        }
-                        .header_bg{
-                            margin-top: 44px;
-                        }
-                        .top_header{
-                            position: inherit;
-                            width: 100%;
-                            height: 44px;
-                            background-color: white;
-                            justify-content: space-between;
-                        }
-                        .top_header #btn_more{
-                            display: inline-block;
-                            top: 0;
-                            margin-left: 20px;
-                        }
-                        .top_header #logo{
-                            position: absolute;
-                            left: 50%;
-                            transform: translate(-50%);
-                            margin: 0px;
-                        }
-                        .top_header>#logo>img{
-                            content: url('../image/logo.svg');
-                        }
-                        .top_header #top_nav{
-                            display: none;
-                        }
-                        .top_header>span{
-                            display: inline-block;
-                            margin-right: 20px;
-                        }
-                    }
-                </style>
                 <button id="btn_more"></button>
                 <a href="../index.html" id="logo"><img src="../image/logo_white.svg" alt="여기어때"/></a>
                 <ul id="top_nav">
@@ -157,65 +31,64 @@
                     <li><a href="../user/login.html"><span>로그인</span></a></li>
                 </ul>
             </div>
-            <div class="sub_header">
-                <!-- 서브 헤더 자리 -->
-            </div>
         </header>
-        <div>
-            <div id="gallery">
-                <div id="big_picture">
-                    <ul>
-                        <li><img src="../image/product_detail1.jpg" alt="no image" width="490px" height="348px"></li>
-                        <li><img src="../image/product_detail2.jpg" alt="no image" width="490px" height="348px"></li>
-                        <li><img src="../image/product_detail3.jpg" alt="no image" width="490px" height="348px"></li>
-                        <li><img src="../image/product_detail4.jpg" alt="no image" width="490px" height="348px"></li>
-                        <li><img src="../image/product_detail5.jpg" alt="no image" width="490px" height="348px"></li>
-                    </ul>
-                </div>
-                <div id="swiper_container">
-                    <ul>
-                        <li><img src="../image/product_detail1.jpg" alt="no image" width="115px" height="82px"></li>
-                        <li><img src="../image/product_detail2.jpg" alt="no image" width="115px" height="82px"></li>
-                        <li><img src="../image/product_detail3.jpg" alt="no image" width="115px" height="82px"></li>
-                        <li><img src="../image/product_detail4.jpg" alt="no image" width="115px" height="82px"></li>
-                        <li><img src="../image/product_detail5.jpg" alt="no image" width="115px" height="82px"></li>
-                    </ul>
-                </div>
-            </div>
-            <div id="introduce">
-                <p id="name">역삼 리치웰</p>
-                <p id="score"><span>9.3&nbsp;추천해요</span> 리뷰&nbsp;3,494개</p>
-                <p id="location">서울 강남구 역삼동 677-9</p>
-                <div>
-                    <p>사장님 한마디</p>
-                    <p>▣리치웰 호텔 전객실 Netflix 프리존 (무료시청가능,자동로그인)<br>
-                        ▣ 전 객실 2인 기준적용<br>
-                        (디럭스,스위트,로얄스위트만 최대4인까지적용/ 1인당 추가요금 2만원발생,이불X)<br>
-                        ▣ 퇴실 30분전 퇴실콜드림 (안받을시 자동연장요금발생 / 객실별 요금다름)<br>
-                        ▣ 신분증 미 지참시 입실이 거부될수있습니다 (신분증미지참시 취소및환불불가)<br>
-                        ▣ 애완동물 출입불가<br>
-                        ▣ 객실지정불가(사진과다를수있음/랜덤배정)<br>
-                        ▣ 객실 내 물품및 재산상 손해발생시 법적책임을 질수있습니다<br>
-                        <br>
-                        ▣ 객실당 차량 1대 가능(전객실 모두 동일함) 2대절대불가<br>
-                        ▣ 입실전 미리주차 절대불가<br>
-                        ★주차타워 불가차량 안내 ★<br>
-                        튜닝카, 트럭 , 승합차 , 카니발, 마세라티전차량 ,고가 스포츠카및 세단 등등<br>
-                        특수차량 및 주차타워 입고불가차량 (호텔에문의)<br>
-                        타워주차불가차량은 (디럭스,스위트,로얄스위트) 객실만 사용가능(일반실사용불가)<br>
-                        ▣ 호텔에 사전문의없이 주차불가차량으로 일반실예약시 차액발생 할수있음<br>
-                        (예약취소 불가능)</p>
-                </div>
+        <div id="content">
+            <div id="upper_content">
+                <section id="gallery">
+                    <div id="big_picture">
+                        <ul>
+                            <li><img src="../image/product_detail1.jpg" alt="no image" width="490px" height="348px"></li>
+                            <li><img src="../image/product_detail2.jpg" alt="no image" width="490px" height="348px"></li>
+                            <li><img src="../image/product_detail3.jpg" alt="no image" width="490px" height="348px"></li>
+                            <li><img src="../image/product_detail4.jpg" alt="no image" width="490px" height="348px"></li>
+                            <li><img src="../image/product_detail5.jpg" alt="no image" width="490px" height="348px"></li>
+                        </ul>
+                    </div>
+                    <div id="swiper_container">
+                        <ul>
+                            <li><img src="../image/product_detail1.jpg" alt="no image" width="115px" height="82px"></li>
+                            <li><img src="../image/product_detail2.jpg" alt="no image" width="115px" height="82px"></li>
+                            <li><img src="../image/product_detail3.jpg" alt="no image" width="115px" height="82px"></li>
+                            <li><img src="../image/product_detail4.jpg" alt="no image" width="115px" height="82px"></li>
+                            <li><img src="../image/product_detail5.jpg" alt="no image" width="115px" height="82px"></li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="introduce">
+                    <p id="name">역삼 리치웰</p>
+                    <p id="score"><span>9.3&nbsp;추천해요</span> 리뷰&nbsp;3,494개</p>
+                    <p id="location">서울 강남구 역삼동 677-9</p>
+                    <div>
+                        <p>사장님 한마디</p>
+                        <p>▣리치웰 호텔 전객실 Netflix 프리존 (무료시청가능,자동로그인)<br>
+                            ▣ 전 객실 2인 기준적용<br>
+                            (디럭스,스위트,로얄스위트만 최대4인까지적용/ 1인당 추가요금 2만원발생,이불X)<br>
+                            ▣ 퇴실 30분전 퇴실콜드림 (안받을시 자동연장요금발생 / 객실별 요금다름)<br>
+                            ▣ 신분증 미 지참시 입실이 거부될수있습니다 (신분증미지참시 취소및환불불가)<br>
+                            ▣ 애완동물 출입불가<br>
+                            ▣ 객실지정불가(사진과다를수있음/랜덤배정)<br>
+                            ▣ 객실 내 물품및 재산상 손해발생시 법적책임을 질수있습니다<br>
+                            <br>
+                            ▣ 객실당 차량 1대 가능(전객실 모두 동일함) 2대절대불가<br>
+                            ▣ 입실전 미리주차 절대불가<br>
+                            ★주차타워 불가차량 안내 ★<br>
+                            튜닝카, 트럭 , 승합차 , 카니발, 마세라티전차량 ,고가 스포츠카및 세단 등등<br>
+                            특수차량 및 주차타워 입고불가차량 (호텔에문의)<br>
+                            타워주차불가차량은 (디럭스,스위트,로얄스위트) 객실만 사용가능(일반실사용불가)<br>
+                            ▣ 호텔에 사전문의없이 주차불가차량으로 일반실예약시 차액발생 할수있음<br>
+                            (예약취소 불가능)</p>
+                    </div>
+                </section>
             </div>
         </div>
-        <div id="tab">
+        <section id="tab">
             <ul>
                 <li>객실안내/예약</li>
                 <li>숙소정보</li>
                 <li>리뷰</li>
             </ul>
-        </div>
-        <article id="reservation">
+        </section>
+        <section id="reservation">
             <p><input type="date" name="date"></p>
             <ul>
                 <li>
@@ -281,8 +154,8 @@
                     </div>
                 </li>
             </ul>
-        </article>
-        <article id="info">
+        </section>
+        <section id="info">
             <button type="button">기본 정보</button>
             <div>
                 <p>혜택안내</p>
@@ -331,10 +204,12 @@
             <div>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam rem fugiat incidunt eaque quod aliquam eligendi, libero accusamus molestias eum soluta debitis! Dolor ex ea veritatis, cumque quasi quae minus.
             </div>
-        </article>
-        <article id="review">
+        </section>
+        <section id="review">
             <div></div>
-        </article>
+        </section>
+        <button class="btn_go_top"></button>
+
         <footer>
             
         </footer>
