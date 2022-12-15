@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 @media screen and(max-width:1024px) {
     
 }
@@ -99,7 +100,7 @@ nav {
     cursor: pointer;
 }
 .noti-check-item {
-    padding: 12px;
+    padding: 12px 0;
 }
 #notifi {
     display: block;
@@ -118,7 +119,8 @@ nav {
     padding: 16px 0;
     color: rgba(0,0,0,.56);
 }
-#noti-list #nav {
+#noti-list {
+    float: right;
     width: 724px;
     margin-right: 31px;
     padding-top: 54px;
@@ -174,8 +176,8 @@ nav {
     align-items: flex-start;
     cursor: default;
     box-sizing: border-box;
-    margin-left: 21%;
     padding: 1px 6px;
+    cursor: pointer;
 }
 #usercoupon {
     width: 724px;
@@ -185,6 +187,18 @@ nav {
     border: none;
     font-size: 18px;
     line-height: 1;
+}
+.sub_wrap {
+    width: 1024px !important;
+    margin: 0 auto 0 auto;
+    padding-bottom: 50px;
+}
+.point {
+    padding-top: 54px;
+}
+.point-list {
+    position: relative;
+    padding: 24px 0 26px;
 }
 footer {
     clear: both;

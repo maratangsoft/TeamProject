@@ -69,8 +69,8 @@
                         position: absolute;
                         top: 50px;
                         right: 10px;
-                        width: 120px;
-                        height: 130px;
+                        width: 140px;
+                        height: 160px;
                         background-color: white;
                         padding: 20px;
                         z-index: 1;
@@ -318,41 +318,43 @@
                 <!-- 서브헤더에 들어갈 것들 -->
             </div>
         </header>
-        <div>
-            <nav>
-                <ul class="navi">
-                <li><a id="active" href="./points.html">포인트</a></li>
-                <li><a href="./coupon.html">쿠폰함</a></li>
-                <li><a href="./reservations.html">예약 내역</a></li>
-                <li><a href="./mypage.html">내정보 관리</a></li>
-                <li><a href="./notifications.html">알림</a></li>
-                </ul>
-            </nav>
-        </div>
-        <h3>포인트</h3>
+        <div class="sub_wrap">
             <div>
-                <div class="point">
+                <nav>
+                    <ul class="navi">
+                    <li><a id="active" href="./points.html">포인트</a></li>
+                    <li><a href="./coupon.html">쿠폰함</a></li>
+                    <li><a href="./reservations.html">예약 내역</a></li>
+                    <li><a href="./mypage.html">내 정보 관리</a></li>
+                    <li><a href="./notifications.html">알림</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="point">
+                <h3>포인트</h3>
+                <div class="mypoint">
                     <p>내 포인트</p>
                     <p style="font-size: 26px;">0 P</p>
-                </div>
                 <div>
                     <p style="font-size: 14px; color: rgba(0,0,0,.56);">30일 내 <strong>0 P</strong>가  소멸될 예정이에요.</p>
                 </div>
+                </div>
+                <nav class="point-filter">
+                    <button id="point_btn">
+                        <span>전체</span>
+                    </button>
+                    <button id="point_btn">
+                        <span>적립</span>
+                    </button>
+                    <button id="point_btn">
+                        <span>사용</span>
+                    </button>
+                    <button id="point_btn">
+                        <span>소멸</span>
+                    </button>
+                </nav>
+                </div>
             </div>
-            <nav class="point-filter">
-                <button id="point_btn">
-                    <span>전체</span>
-                </button>
-                <button id="point_btn">
-                    <span>적립</span>
-                </button>
-                <button id="point_btn">
-                    <span>사용</span>
-                </button>
-                <button id="point_btn">
-                    <span>소멸</span>
-                </button>
-            </nav>
             <footer>
                 <style>
                     footer{
