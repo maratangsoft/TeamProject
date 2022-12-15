@@ -6,12 +6,12 @@ function loaded(){
       document.onscroll = () => {
             if (window.innerWidth > 1024){
                   if (document.documentElement.scrollTop >= 100){
-                        document.querySelector('.top_header_bg').setAttribute('style', 'background-color: white;')
+                        document.querySelector('.top_header_bg').setAttribute('style', 'background-color: white; box-shadow: 0px 3px 3px lightgray;')
                         document.querySelector('.top_header>#logo>img').setAttribute('src', '../../image/logo.svg')
                         document.querySelectorAll('.top_header span').forEach(it => it.setAttribute('style', 'color: black;'))
                   }
                   if (document.documentElement.scrollTop == 0){
-                        document.querySelector('.top_header_bg').setAttribute('style', 'background-color: none;')
+                        document.querySelector('.top_header_bg').setAttribute('style', 'background-color: none; box-shadow: none;')
                         document.querySelector('.top_header>#logo>img').setAttribute('src', '../../image/logo_white.svg')
                         document.querySelectorAll('.top_header span').forEach(it => it.setAttribute('style', 'color: white;'))
                   }
