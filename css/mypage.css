@@ -9,14 +9,17 @@
 }
 a {
     text-decoration: none;
-    color: #0000008f;
-    font-size: 18px  Pretendard;
+    color: black;
 }
 body {
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
+}
+button{
+    border: none;
+    background-color: transparent;
 }
 header .point_header{
     color: aqua;
@@ -33,16 +36,30 @@ button #point_btn {
     color: white;
     background-color: #1273e4;
 }
-.active {
-    color: red;
-    font-weight: bold;
-}
 nav {
     display: block;
     float: left;
     width: 238px;
     padding-left: 31px;
 }
-li {
+.navi li{
     margin-bottom: 18px;
+    font-size: 18px  Pretendard;
+}
+.navi a {
+    margin-bottom: 18px;
+    font-size: 18px  Pretendard;
+    color: #0000008F;
+}
+#active {
+    color: red;
+    font-weight: bold;
+}
+.noti_checkbox {
+    margin: 0 10px 0 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    cursor: pointer;
 }
