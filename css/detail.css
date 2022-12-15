@@ -14,3 +14,140 @@ button{
     border: none;
     background-color: transparent;
 }
+
+.top_header_bg{
+    position: fixed;
+    width: 100%;
+    height: 72px;
+    background-color: #f7323f;
+}
+header{
+    position: absolute;
+    top: 0px;
+    display: flex;
+    width: 100%;
+    height: 72px;
+    justify-content: center;
+}
+.top_header{
+    display: flex;
+    position: fixed;
+    width: 1024px;
+    height: 72px;
+    align-items: center;
+    justify-content: space-between;
+}
+.top_header #btn_more{
+    display: none;
+    background-image: url('../image/hamburger.png');
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+}
+.top_header #logo{
+    width: 95px;
+    margin-left: 20px;
+}
+.top_header img{
+    width: 95px;
+}
+.top_header #top_nav{
+    margin-right: 10px;
+}
+.top_header #top_nav>li{
+    display: inline-block;
+}
+.top_header>#top_nav span{
+    color: white;
+    padding: 5px;
+}
+.top_header #top_nav_submenu{
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 120px;
+    height: 130px;
+    background-color: white;
+    padding: 20px;
+    z-index: 1;
+    box-shadow: 1px 1px 3px gray;
+    border-radius: 4px;
+    padding: 20px;
+}
+.top_header #more:hover #top_nav_submenu{
+    display: block;
+}
+.top_header #top_nav_submenu li{
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.top_header>span{
+    display: none;
+    width: 16px;
+    height: 16px;
+}
+
+#content{
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 72px;
+}
+#upper_content{
+    display: flex;
+}
+
+.btn_go_top{
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0.7;
+    background-image: url('../image/up-arrow.png');
+    background-color: lightgray;
+    background-size: contain;
+    border-color: rgba(200, 200, 200, 0.5);
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .top_header_bg{
+        height: 44px;
+        background-color: white;
+        box-shadow: 0px 3px 3px lightgray;
+    }
+    .top_header{
+        width: 100%;
+        height: 44px;
+        background-color: white;
+        justify-content: space-between;
+    }
+    .top_header #btn_more{
+        display: inline-block;
+        top: 0;
+        margin-left: 20px;
+    }
+    .top_header #logo{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        margin: 0px;
+    }
+    .top_header>#logo>img{
+        content: url('../image/logo.svg');
+    }
+    .top_header #top_nav{
+        display: none;
+    }
+    .top_header>span{
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    #content{
+        padding-top: 44px;
+    }
+}

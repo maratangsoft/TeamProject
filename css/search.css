@@ -18,7 +18,7 @@ button{
 .header_bg{
       top: 0;
       height: 211px;
-      background-color: rgb(247,50,63);
+      background-color: #f7323f;
 }
 .top_header_bg{
       position: fixed;
@@ -60,7 +60,7 @@ header{
       width: 95px;
 }
 .top_header #top_nav{
-      margin-right: 10px;
+      margin-right: 20px;
 }
 .top_header #top_nav>li{
       display: inline-block;
@@ -98,7 +98,6 @@ header{
 }
 
 .sub_header{
-      margin-top: 72px;
       width: 1024px;
       height: 211px;
       padding: 0px auto;
@@ -107,7 +106,7 @@ header{
       font-weight: normal;
       font-size: 2.2em;
       color: white;
-      margin-top: 20px;
+      margin-top: 82px;
       margin-left: 20px;
 }
 .sub_header .filter_label{
@@ -191,7 +190,7 @@ aside{
       height: 1460px;
       background-color: gray;
       margin-top: 36px;
-      margin-left: 30px;
+      margin-left: 20px;
       margin-right: 36px;
 }
 #content{
