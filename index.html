@@ -7,21 +7,7 @@
         <link type="text/css" rel="stylesheet" href="./css/main.css">
 
         <script>
-            // slide();
-            // function slide(){
-            //     var img=document.getElementsByClassName("img");
-            //     var count=img.length;
-            //     var i;
-            //     for(i=0;i<count;i++){
-            //         img[i].style.display="none"
-            //     }
-            //     var index=1; 
-            //     if(index>count){
-            //         index=1;
-            //     }
-            //     img[index-1].style.display="block";
-            //     setTimeout(slide,3000);
-            // }
+// https://saintsilver.github.io/components/view/carousel.html
         </script>
     </head>
 
@@ -31,59 +17,71 @@
         </header>
         <div class="main_img" >
             <a href="./more/eventView/6.html" >
-                <!-- <img src="./image/main/mainspot_221201.jpg" style="width:100%; "> -->
+                <img src="./image/main/mainspot_221201.jpg" style="width:100%; "> 
             </a>
             <div style="clear:both;"></div>
         </div>
         <div class="main_icons">
-            <ul>
-                <li>
-                    <a href="./product/home/1.html">
-                        <img src="./image/main/ico_category_01.png" alt="motel">
-                        <p>모텔</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="./product/search/2/2001.html">
-                        <img src="./image/main/ico_category_02.png" alt="hotel">
-                        <p>호텔&리조트</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="./product/search/3/3001.html">
-                        <img src="./image/main/ico_category_03.png" alt="pension">
-                        <p>펜션</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="./product/search/4/4001.html">
-                        <img src="./image/main/ico_category_04.png" alt="guesthouse">
-                        <p>게스트하우스</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="./product/search/5/5001.html">
-                        <img src="./image/main/ico_category_05.png" alt="camping">
-                        <p>켐핑&글램핑</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="./more/eventView/6.html">
-                        <img src="./image/main/ico_category_09.png" alt="abroad">
-                        <p>해외여행</p>
-                    </a>
-                </li>
-            </ul>
-            <br>
+                <div id="icons_row">
+                    <ul>
+                        <li>
+                            <a href="./product/home/1.html">
+                                <img src="./image/main/ico_category_01.png" alt="motel">
+                                <p>모텔</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./product/search/2/2001.html">
+                                <img src="./image/main/ico_category_02.png" alt="hotel">
+                                <p>호텔&리조트</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./product/search/3/3001.html">
+                                <img src="./image/main/ico_category_03.png" alt="pension">
+                                <p>펜션</p>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                <div id="icons_row">
+                    <ul>
+                        <li>
+                            <a href="./product/search/4/4001.html">
+                                <img src="./image/main/ico_category_04.png" alt="guesthouse">
+                                <p>게스트하우스</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./product/search/5/5001.html">
+                                <img src="./image/main/ico_category_05.png" alt="camping">
+                                <p>켐핑&글램핑</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./more/eventView/6.html">
+                                <img src="./image/main/ico_category_09.png" alt="abroad">
+                                <p>해외여행</p>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <br>
+                
         </div>    
         
-        
         <div style="display: flex; justify-content: left; margin-left: 15%;"><h2>여기어때 소식</h2></div>
+
         <div class="main_news">
+            <!-- <span id="head">           </span> -->
+           <div style="clear:both"></div>
             <ul>
                 <li>
-                    <span>
-                        <img src="./image/main/news_banner1.png" style="left:0; height: 95px; width: 95px; top: 5px;"> 
+                    <span id="news">
+                        <img src="./image/main/news_banner1.png" style="left:0; height: 95px; width: 95px;  margin-bottom: 0; padding: 0 0 0 0;"> 
                         <p><strong>여기어때 비즈니스</strong>
                         <br>출장부터 복지까지 
                         <br>여기어때 비즈니스로 스마트하게</p>
@@ -91,8 +89,9 @@
                     </span>
                    
                 </li>
+                <hr>
                 <li>
-                    <span>
+                    <span id="news">
                         <img src="./image/main/news_re_jalnan.png" style="left:0; height: 95px; width: 95px; top: 5px;"> 
                         <p><strong>여기어때 서체 출시</strong>
                         <br>젊고 당당한 여기어때 잘난체  
@@ -100,7 +99,9 @@
                     </span>
                       
                 </li>
+                <hr>
             </ul>
+            
         </div>            
        
 
@@ -108,10 +109,10 @@
             <p >
                 앱 다운받고 <strong>더 많은 혜택</strong> 받으세요
             </p>
-            <a href="" style="position:absolute; top:65%; transform: translate(-50%,-65%);">
+            <a href="" style="position:absolute; top:60%; transform: translate(-60%,-50%);">
                 <img src="./image/main/down_playstore.png" style="width: 150px;">
             </a>
-            <a href="" style="position:absolute; top:65%; transform: translate(50%,-65%);">
+            <a href="" style="position:absolute; top:60%; transform: translate(60%,-50%);">
                 <img src="./image/main/down_appstore.png" style="width:150px;">
             </a>
         </div>
@@ -119,38 +120,89 @@
 
         <div style="display: flex; justify-content: left; margin-left: 15%;"><h2>이벤트</h2></div>
         <div class="main_event">
-                <a href="./more/eventView/1.html">
-                    <img class="img" src="./image/main/event1.jpg" style="width: 100%;">
-                </a>
-                <!-- <a href="./more/eventView/2.html">
-                    <img class="img" src="./image/main/event2.jpg" style="width: 100%;">
-                </a>
-                <a href="./more/eventView/3.html">
-                    <img class="img" src="./image/main/event3.jpg" style="width: 100%;">
-                </a> -->
+            <ul id="events"> 
+                <li>
+                    <a href="./more/eventView/1.html">
+                        <img class="img" src="./image/main/event1.jpg" style="width: 100%;"> 
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="./more/eventView/1.html">
+                        <img class="img" src="./image/main/event2.jpg" style="width: 100%;"> 
+                    </a>
+                </li>
+                <li>
+                    <a href="./more/eventView/1.html">
+                        <img class="img" src="./image/main/event3.jpg" style="width: 100%;"> 
+                    </a>
+                </li> -->
+            </ul>
+                
+            <div id="btns">
+                <ul></ul>
+            </div>                
+               
         </div>
 
         
         <div class="main_ad">
             <ul>
                 <li>
-                    <span>
                         <img src="./image/main/ad_mo_01_171013.png" > 
 
-                    </span>
                 </li>
                 <li>
-                    <span>
                         <img src="./image/main/ad_mo_02_171013.png" >          
 
-                    </span>
                 </li>
             </ul>
         </div>            
 
 
         <footer>
-
+            <style>
+                footer{
+                    background-color: rgb(245,245,245);
+                    width: 100%; 
+                    padding: 40px 20px 20px 20px; 
+                    margin-top: 120px;
+                    color: #99999a;
+                }
+                footer div{
+                    font-size: 0.8em;
+                    margin-top: 3px;
+                    margin-bottom: 3px;
+                }
+                footer button{
+                    background-color: transparent;
+                    border: none;
+                    background-size: contain; 
+                    width: 24px; 
+                    height: 24px;
+                }
+                footer #btn_facebook{
+                    background-image: url(./image/Facebook_logo.svg);
+                }
+                footer #btn_blog{
+                    background-image: url(./image/blog_icon.svg);
+                }
+            </style>
+    
+            <div>회사소개 | 이용약관 | 개인정보처리방침 | 소비자 분쟁해결 기준 | 사업자 정보확인</div>
+            <div>여기어때 마케팅센터 | 액티비티 호스트센터 | HOTEL 여기어때 | 콘텐츠산업진흥법에의한 표시</div>
+            <br>
+            <div><b>고객행복센터 1670-6250</b> 오전 9시 - 새벽 3시</div>
+            <br>
+            <div>(주) 여기어때컴퍼니</div>
+            <div>주소 : 서울특별시 강남구 봉은사로 479, 479타워 11층 | 대표이사 : 정명훈 | 사업자등록번호: 742-86-00224</div>
+            <div>통신판매번호 : 2017-서울강남-01779 | 관광사업자 등록번호: 제1026-24호 | 전화번호 : 1670-6250 | 전자우편주소 : help@goodchoice.kr</div>
+            <div>(주) 여기어때컴퍼니는 통신판매중개자로서 통신판매의 당사자가 아니며, 상품의 예약, 이용 및 환불 등과 관련한 의무와 책임은 각 판매자에게 있습니다.</div>
+            <br>
+            <div>Copyright GC COMPANY Corp. All rights reserved.</div>
+            <br>
+            <hr>
+            <br>
+            <div><button id="btn_facebook"></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="btn_blog"></button></div>
         </footer>
     </body>
 </html>
