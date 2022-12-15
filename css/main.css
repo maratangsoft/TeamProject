@@ -4,7 +4,7 @@ body{
     display: block;
     justify-content: center;
 }
-.main_img,.main_news, .main_down,.main_event.main_ad{
+.main_img,.main_news, .main_down,.main_event,.main_ad{
     width: 50%;
      margin:0 auto;
     display: flex;
