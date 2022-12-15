@@ -80,13 +80,14 @@ div.main_icons ul{
     margin-right: 40px;
     display: flex;
     justify-content: center;
+
 }
 .main_news span #news{
     width: 400px;
     margin-bottom: 0;
     padding-bottom: 0;
 }
-.main_news span p{
+.main_news p{
     padding-left: 10px;
     float: right;
     padding-right: 10px;
