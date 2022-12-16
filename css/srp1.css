@@ -82,19 +82,9 @@ div.tab{
    padding: 16px; 
    width: 100%;
    margin:0;
-   background-color:rgb(253, 249, 232);
+   background-color:rgb(252, 250, 243);
 }
-#img{
-    height: 300px;
-    width: 150px;
-    background-image: url(../image/srp/content1.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center center;
-    display: table-cell;
-    vertical-align: text-top;
-    background-position: left;
-}
+
 #content span{
     height: 300px;
     width: 150px;
@@ -106,11 +96,10 @@ div.tab{
     width: 150px;
     height: 300px;
     object-fit: cover;
-    float: left;
 }
 #content p{
     text-align: left;
-    margin-left: 20px;
+    margin-left: 180px;
 }
 p.reviews{color: rgb(255, 208, 0);}
 p.reservation{color: rgb(196, 196, 196);}
@@ -367,6 +356,7 @@ div.srp1_top{
         transform: translate(0,0); 
         flex-direction: row;
         justify-content: center;
+        margin-top: 7px;
     }
     #top_date_container{
         flex-direction: row;

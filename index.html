@@ -3,10 +3,17 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Index</title>
+        <title>여행할때 여기어때</title>
         <link type="text/css" rel="stylesheet" href="./css/main.css">
 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
         <script src="./js/header_main.js">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        
+        
+        <script>
+           
         </script>
     </head>
 
@@ -152,21 +159,32 @@
                     <div>
                         <ul>
                             <li>
-                                    <img src="./image/main/news_banner1.png" style="left:0; height: 160px; width: 160px;  margin-bottom: 0; padding: 0 0 0 0;"> 
-                                    <p><strong>여기어때 비즈니스</strong>
+                             <div id="container">
+                                <img src="./image/main/news_banner1.png" > 
+                                <div>
+                                    <p style="color: #00796b; font-size: 20px; padding-top: 10px;">여기어때 비즈니스</p>
+                                    <p style="color: rgb(155, 155, 155);  padding-bottom: 10px;">
                                     <br>출장부터 복지까지 
                                     <br>여기어때 비즈니스로 스마트하게</p>
-                                
+                                </div>
+                             </div>
                             </li>
-                            <hr>
+
                             <li>
-                                    <img src="./image/main/news_re_jalnan.png" style="left:0; height: 160px; width: 160px; top: 5px;"> 
-                                    <p><strong>여기어때 서체 출시</strong>
-                                    <br>젊고 당당한 여기어때 잘난체  
-                                    <br>지금 다운로드 받으세요!</p> 
+                                <div id="container">
+                                    <img src="./image/main/news_re_jalnan.png" > 
+                                    <div>
+                                        <p style="color: #00796b; font-size: 20px; padding-top: 10px;">여기어때 서체 출시</p>
+                                        <p style="color: rgb(155, 155, 155); padding-bottom: 10px;">
+                            
+                                        <br>젊고 당당한 여기어때 잘난체  
+                                        <br>지금 다운로드 받으세요!</p> 
+                                    </div>
+                                </div>
+                                   
+                        
                                   
                             </li>
-                            <hr>
                         </ul>
         
                     
@@ -188,32 +206,42 @@
                     <img src="./image/main/down_appstore.png" style="width:150px;">
                 </a>
             </div>
-    
-    
+                
             <div class="main_event">
                 <h2>이벤트</h2>
-                <div class="events">
-                    <div class="wrapper">
-                        <div class="evt">
-                            <a href="./more/eventView/2.html">
-                                <img class="img" src="./image/main/event1.jpg" style="width: 100%;"> 
+                <div class="swiper" style="display: flex; flex-direction: row;">
+                    <!-- Additional required wrapper -->
+                    
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <a  href="./more/eventView/2.html">
+                                <img src="./image/main/event1.jpg" > 
                             </a>
-                        </div>
                             
-                        <div class="evt">
+                        </div>
+                        <div class="swiper-slide"> 
                             <a href="./more/eventView/3.html">
-                                <img class="img" src="./image/main/event2.jpg" style="width: 100%;"> 
+                                <img class="img" src="./image/main/event2.jpg" > 
+
                             </a>
                         </div>
-                        <div class="evt">
+                        <div class="swiper-slide"> 
                             <a href="./more/eventView/4.html">
-                                <img class="img" src="./image/main/event3.jpg" style="width: 100%;"> 
+                                 <img class="img" src="./image/main/event1.jpg"> 
+
                             </a>
                         </div>
                     </div>
-                    <div class="btn"></div>      
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  
                 </div>
-                          
+                
+                <div style="clear: both;"></div>
                    
             </div>
     
@@ -234,6 +262,7 @@
                 
             </div>            
     
+                
         </div>
         
 
