@@ -195,10 +195,87 @@ nav {
 }
 .point {
     padding-top: 54px;
+    float: right;
+    width: 724px;
+    margin-right: 31px;
+}
+.point h3 {
+    margin-bottom: 20px;
 }
 .point-list {
     position: relative;
     padding: 24px 0 26px;
+}
+.point-list-empty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 48px 0;
+    color: rgba(0,0,0,.24);
+    line-height: 1.45;
+    font-size: 18px;
+    font-weight: 800;
+}
+.mypoint {
+    padding: 20px;
+    background-color: #f2f8ff;
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+.pointinfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 10px;
+}
+.pointnoti {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 11px;
+    border-top: 1px solid rgba(0,0,0,.02);
+    cursor: text;
+    pointer-events: none;
+}
+.mp {
+    font-size: 14px;
+    font-weight: 400;
+    color: #1273e4;
+}
+.mp2 {
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 30px;
+    color: #1273e4;
+}
+.point-filter {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding-left: 0;
+    padding-bottom: 20px;
+    float: none;
+    overflow: auto;
+    white-space: nowrap;
+    padding-top: 0;
+}
+button span {
+    position: relative;
+}
+.point-filter button {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    margin-left: 8px;
+    color: rgba(0,0,0,.8);
+    background-color: #fafafa;
+    border-radius: 18px;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
 }
 footer {
     clear: both;
