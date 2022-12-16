@@ -1,4 +1,21 @@
 function loaded(){
+    const swiper = new Swiper('.swiper', {
+                
+        // Optional parameters
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+    });
+
     // 이벤트: 데스크탑에서 아래로 스크롤하면 헤더 색 변경
     document.onscroll = () => {
         if (window.innerWidth > 1024){
