@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <link type="text/css" rel="stylesheet" href="../../css/srp1.css">
+        <script src="../../js/header.js">
+        </script>
+    </head>
+    <body onload="loaded()">
+
+        <div class="header_bg"></div>
+        <div class="top_header_bg"></div>
+        <header>
+            <div class="top_header">
+                <button id="btn_more"></button>
+                <a href="../../index.html" id="logo"><img src="../../image/logo_white.svg" alt="여기어때"/></a>
+                <!-- 데스크탑 내비 메뉴 -->
+                <ul id="top_nav">
+                    <li><a href="../../product/srp/1.html"><span>내주변</span></a></li>
+                    <li><a href="../../my/reservations.html"><span>예약내역</span></a></li>
+                    <li id="more">
+                        <span>더보기</span>
+                        <ul id="top_nav_submenu">
+                            <li><a href="../../more/notice.html">공지사항</a></li>
+                            <li><a href="../../more/event.html">이벤트</a></li>
+                            <li><a href="../../more/faq.html">자주 묻는 질문</a></li>
+                            <li>1:1 문의</li>
+                            <li>약관 및 정책</li>
+                        </ul>
+                    </li>
+                    <li><a href="../../user/login.html"><span>로그인</span></a></li>
+                </ul>
+                <!-- 모바일 드로워 메뉴 -->
+                <section class="drawer">
+                    <div class="drawer_body">
+                        <div class="drawer_fixed">
+                            <div class="drawer_profile">
+                                <p>로그인 후 예약하시면<br>할인 쿠폰과 추가 혜택을 받을 수 있어요</p>
+                                <br>
+                                <p><a href="../../user/login.html">로그인</a></p>
+                            </div>
+                            <ul class="drawer_nav">
+                                <li><a href="../../my/points.html">-<br>포인트</a></li>
+                                <li><a href="../../my/coupon.html">-<br>쿠폰함</a></li>
+                            </ul>
+                        </div>
+                        <div class="drawer_menu">
+                            <ul>
+                                <li><a href="../../index.html">홈</a></li>
+                                <li id="drawer_product">
+                                    숙소유형
+                                    <ul>
+                                        <li><a href="../../product/home/1.html">모텔</a></li>
+                                        <li><a href="../../product/search/2/2001.html">호텔·리조트</a></li>
+                                        <li><a href="../../product/search/3/3001.html">펜션</a></li>
+                                        <li><a href="../../product/search/4/4001.html">게스트하우스</a></li>
+                                        <li><a href="../../product/search/5/5001.html">캠핑·글램핑</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../../product/srp/1.html">내주변</a></li>
+                                <li><a href="../../my/reservations.html">예약 내역</a></li>
+                                <li id="drawer_more">
+                                    더보기
+                                    <ul>
+                                        <li><a href="../../more/notice.html">공지사항</a></li>
+                                        <li><a href="../../more/event.html">이벤트</a></li>
+                                        <li><a href="../../more/faq.html">고객문의</a></li>
+                                        <li><a href="../../my/notifications.html">알림설정</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="drawer_tel">
+                                <p>여기어때 고객행복센터</p>
+                                <p>1670-6250</p>
+                                <p>오전 9시 - 새벽 3시</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="drawer_btn_wrapper">
+                        <button id="btn_drawer_close"></button>
+                    </div>
+                </section>
+            </div>
+            <div class="srp1_top">
+                    <img src="../../image/srp/ico_around.png" style="visibility:hidden; display:none;">
+
+                    <div id="top_location">
+                        <h1>내 주변</h1>
+                        <p>서울ㄹㄹㄹ</p>
+                        <button type="button" >내 위치 설정</button>
+                    </div>
+                    <div id="top_date">
+                        <div id="top_date_containerr">
+                            <img src="../../image/srp/ico_cal.png" >
+                            <p>12.14~12.15 1박</p>
+                        </div>
+                    </div>
+            </div>
+        </header>
+        <div style="clear: both;"></div>
+        <!--  -->
+        <!--  -->
+
+        <div class="srp1">
+    
+            <div class="tab">
+                <ul>
+                    <li>
+                        <a href="./1.html">
+                            <p>모텔</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./2.html">
+                            <p>호텔&리조트</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./3.html">
+                            <p>펜션</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./4.html">
+                            <p>게스트하우스</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./5.html">
+                            <p>캠핑</p>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <hr>
+
+            
+        <div class="container" >
+            <aside style="background-color: aliceblue; width: 200px; height: 1024px;">
+
+            </aside>
+            <div style="display: flex; flex-direction: column;">
+            </div>
+
+                <div class="contents">
+                    <div class="sub">
+                        <span id="rec" style=" color: rgb(83, 83, 83);"><strong>TOP 추천</strong></span>
+                        <span id="ad" style="text-align: right; color: rgb(189, 189, 189); ">광고 ?</span>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <div id="content" >
+                                    <span id="img" style="border:1px solid #99999a;"></span>
+                                    <p class="name"><strong>왕십리 Full Moon</strong></p>
+                                    <p class="reviews">최고에요(100)</p>
+                                    <p class="location">591m | 성동구 도선동</p>
+                                    <p class="reservation">예약취소가능</p>
+                                    <p style="float: right;">
+                                        대실 <strong>40,000원</strong><br>
+                                        숙박 <strong>50,000원</strong>
+                                    </p>
+                                                              
+                                </div>  
+                             
+                                <hr>
+                            </li>
+                            <li>
+                                <div id="content">
+                                    <span id="img"></span>
+                                    <p class="name"><strong>왕십리 호텔 아모렉스</strong></p>
+                                    <p class="reviews">추천해요(518)</p>
+                                    <p class="location">597m | 성동구 도선동</p>
+                                    <p class="reservation">예약취소가능,혜택존</p>
+                                    <p style="float: right;">
+                                        대실 <strong>40,000원</strong><br>
+                                        숙박 <strong>50,000원</strong>
+                                    </p>
+                                </div>
+                                <hr>
+                            </li>
+                            <li>
+                                    <div id="content">
+                                        <span id="img"></span>
+                                        <p class="name"><strong>왕십리 컬리넌</strong></p>
+                                        <p class="reviews">추천해요(3955)</p>
+                                        <p class="location">629m | 성동구 도선동</p>
+                                        <p class="reservation">예약취소가능,혜택존</p>
+                                       <p style="float:right;">
+                                            대실 <strong>40,000원</strong><br>
+                                            숙박 <strong>50,000원</strong>
+                                        </p>
+                                    </div>
+                                    <hr>                                    
+                            </li>
+                            <li>
+                                <div id="content" >
+                                    <span id="img" style="border:1px solid #99999a;"></span>
+                                    <p class="name"><strong>왕십리 H</strong></p>
+                                    <p class="reviews">추천해요(1503)</p>
+                                    <p class="location">657m | 성동구 도선동</p>
+                                    <p class="reservation">예약취소가능</p>
+                                    <p style="float: right;">
+                                        대실 <strong>40,000원</strong><br>
+                                        숙박 <strong>50,000원</strong>
+                                    </p>
+                                                              
+                                </div>  
+                             
+                                <hr>
+                            </li>
+                            <li>
+                                <div id="content" >
+                                    <span id="img" style="border:1px solid #99999a;"></span>
+                                    <p class="name"><strong>왕십리 포레스타</strong></p>
+                                    <p class="reviews">추천해요(4191)</p>
+                                    <p class="location">675m | 성동구 도선동</p>
+                                    <p class="reservation">예약취소가능</p>
+                                    <p style="float: right;">
+                                        대실 <strong>40,000원</strong><br>
+                                        숙박 <strong>50,000원</strong>
+                                    </p>
+                                                              
+                                </div>  
+                             
+                                <hr>
+                            </li>
+                        </ul>
+                    </div>
+                        
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+            
+        </div>
+
+        
+
+        <footer>
+            <style>
+                footer{
+                    background-color: rgb(245,245,245);
+                    width: 100%; 
+                    padding: 40px 20px 20px 20px; 
+                    margin-top: 120px;
+                    color: #99999a;
+                }
+                footer div{
+                    font-size: 0.8em;
+                    margin-top: 3px;
+                    margin-bottom: 3px;
+                }
+                footer button{
+                    background-color: transparent;
+                    border: none;
+                    background-size: contain; 
+                    width: 24px; 
+                    height: 24px;
+                }
+                footer #btn_facebook{
+                    background-image: url(../../image/Facebook_logo.svg);
+                }
+                footer #btn_blog{
+                    background-image: url(../../image/blog_icon.svg);
+                }
+            </style>
+    
+            <div>회사소개 | 이용약관 | 개인정보처리방침 | 소비자 분쟁해결 기준 | 사업자 정보확인</div>
+            <div>여기어때 마케팅센터 | 액티비티 호스트센터 | HOTEL 여기어때 | 콘텐츠산업진흥법에의한 표시</div>
+            <br>
+            <div><b>고객행복센터 1670-6250</b> 오전 9시 - 새벽 3시</div>
+            <br>
+            <div>(주) 여기어때컴퍼니</div>
+            <div>주소 : 서울특별시 강남구 봉은사로 479, 479타워 11층 | 대표이사 : 정명훈 | 사업자등록번호: 742-86-00224</div>
+            <div>통신판매번호 : 2017-서울강남-01779 | 관광사업자 등록번호: 제1026-24호 | 전화번호 : 1670-6250 | 전자우편주소 : help@goodchoice.kr</div>
+            <div>(주) 여기어때컴퍼니는 통신판매중개자로서 통신판매의 당사자가 아니며, 상품의 예약, 이용 및 환불 등과 관련한 의무와 책임은 각 판매자에게 있습니다.</div>
+            <br>
+            <div>Copyright GC COMPANY Corp. All rights reserved.</div>
+            <br>
+            <hr>
+            <br>
+            <div><button id="btn_facebook"></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="btn_blog"></button></div>
+        </footer>
+    </body>
+</html>
