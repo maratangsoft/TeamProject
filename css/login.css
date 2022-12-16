@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Pretendard', 'Apple SD Gothic Neo', '맑은 고딕', '맑은고딕', 'Malgun Gothic', sans-serif;
+}
+.title {
+    display: block !important;
+    margin-bottom: 16px;
+    position: relative;
+}
+.logo {
+    display: block;
+    text-indent: -9999px;
+    cursor: pointer;
+    width: 112px;
+    height: 44px;
+    background: url(../image/logo.png) 50% 50% no-repeat;
+}
+.btn_kakao {
+    background: rgb(252,229,30);
+    color: rgb(59,29,20);
+}
+.btn_fb {
+    background: rgb(24,119,242);
+    color: #fff;
+}
+.btn_naver {
+    background: rgb(40,209,17);
+    color: #fff;
+}

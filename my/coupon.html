@@ -5,34 +5,335 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Coupon</title>
         <link rel="stylesheet" href="../css/mypage.css">
-
-
-        <style>
-            
-        </style>
-
-        <script>
-            
-        </script>
+        <script src="../js/mypage.js"></script>
     </head>
+    <body onload="loaded()">
+        <div class="header_bg"></div>
+        <div class="top_header_bg"></div>
+        <header>
+            <div class="top_header">
+                <style>
+                    .header_bg{
+                        height: 211px;
+                        background-color: #f7323f;
+                        background-size: cover;
+                    }
+                    .top_header_bg{
+                        position: fixed;
+                        top: 0px;
+                        width: 100%;
+                        height: 72px;
+                    }
+                    header{
+                        position: absolute;
+                        top: 0px;
+                        display: flex;
+                        width: 100%;
+                        height: 211px;
+                        justify-content: center;
+                    }
+                    .top_header{
+                        display: flex;
+                        position: fixed;
+                        width: 1024px;
+                        height: 72px;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                    .top_header #btn_more{
+                        display: none;
+                        background-image: url('../image/hamburger.png');
+                        background-size: contain;
+                        width: 16px;
+                        height: 16px;
+                    }
+                    .top_header #logo{
+                        width: 95px;
+                        margin-left: 20px;
+                    }
+                    .top_header img{
+                        width: 95px;
+                    }
+                    .top_header #top_nav{
+                        margin-right: 20px;
+                    }
+                    .top_header #top_nav>li{
+                        display: inline-block;
+                    }
+                    .top_header>#top_nav span{
+                        color: white;
+                        padding: 5px;
+                    }
+                    .top_header #top_nav_submenu{
+                        display: none;
+                        position: absolute;
+                        top: 50px;
+                        right: 10px;
+                        width: 140px;
+                        height: 160px;
+                        background-color: white;
+                        padding: 20px;
+                        z-index: 1;
+                        box-shadow: 1px 1px 3px gray;
+                        border-radius: 4px;
+                        padding: 20px;
+                    }
+                    .top_header #more:hover #top_nav_submenu{
+                        display: block;
+                    }
+                    .top_header #top_nav_submenu li{
+                        color: black;
+                        margin-top: 5px;
+                        margin-bottom: 5px;
+                    }
+                    .top_header>span{
+                        display: none;
+                        width: 16px;
+                        height: 16px;
+                    }
+                    .top_header .drawer{
+                        display: none;
+                        position: fixed;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .top_header .drawer_btn_wrapper{
+                        order: 2;
+                        flex-shrink: 0;
+                        text-align: center;
+                        width: 60px;
+                    }
+                    .top_header #btn_drawer_close{
+                        width: 16px;
+                        height: 16px;
+                        background-image: url(../image/x.png);
+                        background-size: contain;
+                        margin-top: 20px;
+                    }
+                    .top_header .drawer_body{
+                        flex-direction: column;
+                        display: inherit;
+                        order: 1;
+                        flex-grow: 1;
+                        background-color: #e8e8e8;
+                    }
+                    .top_header .drawer_fixed{
+                        display: inherit;
+                        height: 190px;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+                    .top_header .drawer_profile{
+                        display: inherit;
+                        flex-direction: column;
+                        justify-content: center;
+                        background-color: #ff0055;
+                        height: 134px;
+                        text-align: center;
+                        color: white;
+                        font-size: 0.9em;
+                        padding: 10px;
+                    }
+                    .top_header .drawer_nav{
+                        display: flex;
+                        background-color: #e62243;
+                        height: 56px;
+                        text-align: center;
+                        justify-content: space-around;
+                        align-items: center;
+                        padding: 4px 0px;
+                    }
+                    .top_header .drawer_fixed a{
+                        color: white;
+                    }
+                    .top_header .drawer_profile a{
+                        font-size: 1.2em;
+                        font-weight: bold;
+                    }
+                    .top_header .drawer_menu{
+                        overflow: auto;
+                    }
+                    .top_header .drawer_menu>ul{
+                        background-color: white;
+                        padding: 5px 0px;
+                    }
+                    .top_header .drawer_menu>ul>li{
+                        border-bottom: 1px solid lightgray;
+                    }
+                    .top_header .drawer_menu li{
+                        margin: 30px 20px;
+                    }
+                    .top_header .drawer_menu>ul ul{
+                        display: none;
+                    }
+                    .top_header .drawer_tel{
+                        margin-top: 60px;
+                        text-align: center;
+                    }
+                    .top_header .drawer_tel :first-child{
+                        font-size: 0.8em;
+                    }
+                    .top_header .drawer_tel :nth-child(2){
+                        font-size: 1.65em;
+                        font-weight: bold;
+                    }
+                    .top_header .drawer_tel :last-child{
+                        font-size: 0.9em;
+                    }
 
-    <body>
-        <div class="sub_top">
-            <h2>내정보</h2>
-        </div>
+                    .sub_header{
+                        width: 1024px;
+                        height: 211px;
+                        padding: 0px auto;
+                    }
+                    .sub_header h1{
+                        font-weight: normal;
+                        font-size: 2.2em;
+                        color: white;
+                        margin-top: 82px;
+                        margin-left: 20px;
+                    }
+
+                    @media screen and (max-width: 1024px) {
+                        .top_header_bg{
+                            position: absolute;
+                            height: 44px;
+                            background-color: white;
+                            box-shadow: 0px 3px 3px lightgray;
+                        }
+                        .header_bg{
+                            display: none;
+                        }
+                        .top_header{
+                            position: inherit;
+                            width: 100%;
+                            height: 44px;
+                            background-color: white;
+                            justify-content: space-between;
+                        }
+                        .top_header #btn_more{
+                            display: inline-block;
+                            top: 0;
+                            margin-left: 20px;
+                        }
+                        .top_header #logo{
+                            position: absolute;
+                            left: 50%;
+                            transform: translate(-50%);
+                            margin: 0px;
+                        }
+                        .top_header>#logo>img{
+                            content: url('../image/logo.svg');
+                        }
+                        .top_header #top_nav{
+                            display: none;
+                        }
+                        .top_header>span{
+                            display: inline-block;
+                            margin-right: 20px;
+                        }
+
+                        .sub_header{
+                                display: none;
+                        }
+                        .sub_header h1{
+                                font-size: 1.5em;
+                                margin-top: 115px;
+                                margin-left: 0px;
+                        }
+                    }
+                </style>
+                <button id="btn_more"></button>
+                <a href="../index.html" id="logo"><img src="../image/logo_white.svg" alt="여기어때"/></a>
+                <!-- 데스크탑 내비 메뉴 -->
+                <ul id="top_nav">
+                    <li><a href="../product/srp/1.html"><span>내주변</span></a></li>
+                    <li><a href="../my/reservations.html"><span>예약내역</span></a></li>
+                    <li id="more">
+                        <span>더보기</span>
+                        <ul id="top_nav_submenu">
+                            <li><a href="../more/notice.html">공지사항</a></li>
+                            <li><a href="../more/event.html">이벤트</a></li>
+                            <li><a href="../more/faq.html">자주 묻는 질문</a></li>
+                            <li>1:1 문의</li>
+                            <li>약관 및 정책</li>
+                        </ul>
+                    </li>
+                    <li><a href="../user/login.html"><span>로그인</span></a></li>
+                </ul>
+                <!-- 모바일 드로워 메뉴 -->
+                <section class="drawer">
+                    <div class="drawer_body">
+                        <div class="drawer_fixed">
+                            <div class="drawer_profile">
+                                <p>로그인 후 예약하시면<br>할인 쿠폰과 추가 혜택을 받을 수 있어요</p>
+                                <br>
+                                <p><a href="../user/login.html">로그인</a></p>
+                            </div>
+                            <ul class="drawer_nav">
+                                <li><a href="../my/points.html">-<br>포인트</a></li>
+                                <li><a href="../my/coupon.html">-<br>쿠폰함</a></li>
+                            </ul>
+                        </div>
+                        <div class="drawer_menu">
+                            <ul>
+                                <li><a href="../index.html">홈</a></li>
+                                <li id="drawer_product">
+                                    숙소유형
+                                    <ul>
+                                        <li><a href="../product/home/1.html">모텔</a></li>
+                                        <li><a href="../product/search/2/2001.html">호텔·리조트</a></li>
+                                        <li><a href="../product/search/3/3001.html">펜션</a></li>
+                                        <li><a href="../product/search/4/4001.html">게스트하우스</a></li>
+                                        <li><a href="../product/search/5/5001.html">캠핑·글램핑</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../product/srp/1.html">내주변</a></li>
+                                <li><a href="../my/reservations.html">예약 내역</a></li>
+                                <li id="drawer_more">
+                                    더보기
+                                    <ul>
+                                        <li><a href="../more/notice.html">공지사항</a></li>
+                                        <li><a href="../more/event.html">이벤트</a></li>
+                                        <li><a href="../more/faq.html">고객문의</a></li>
+                                        <li><a href="../my/notifications.html">알림설정</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="drawer_tel">
+                                <p>여기어때 고객행복센터</p>
+                                <p>1670-6250</p>
+                                <p>오전 9시 - 새벽 3시</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="drawer_btn_wrapper">
+                        <button id="btn_drawer_close"></button>
+                    </div>
+                </section>
+            </div>
+            <div class="sub_header">
+                <h1>내정보</h1>
+                <!-- 서브헤더에 들어갈 것들 -->
+            </div>
+        </header>
+        <div class="sub_wrap">
         <div>
             <nav>
-                <ul>
-                <li><a class href="./points.html">포인트</a></li>
-                <li><a class="active" href="./coupon.html">쿠폰함</a></li>
-                <li><a class href="./reservations.html">예약 내역</a></li>
-                <li><a class href="./mypage.html">내정보 관리</a></li>
-                <li><a class href="./notifications.html">알림</a></li>
+                <ul class="navi">
+                <li><a href="./points.html">포인트</a></li>
+                <li><a id="active" href="./coupon.html">쿠폰함</a></li>
+                <li><a href="./reservations.html">예약 내역</a></li>
+                <li><a href="./mypage.html">내 정보 관리</a></li>
+                <li><a href="./notifications.html">알림</a></li>
                 </ul>
             </nav>
         </div>
-        <div>
-            <strong>보유쿠폰 <span style="color:red">0 장</span></strong>
+        <div id="usercoupon" style="height: 300px;">
+            <strong style="padding-right: 20px;">보유쿠폰</strong>
+            <span style="font-weight: bold; color:red">0장</span>
+        </div>
         </div>
         <footer>
             <style>
@@ -56,10 +357,10 @@
                     height: 24px;
                 }
                 footer #btn_facebook{
-                    background-image: url(./image/Facebook_logo.svg);
+                    background-image: url(../image/Facebook_logo.svg);
                 }
                 footer #btn_blog{
-                    background-image: url(./image/blog_icon.svg);
+                    background-image: url(../image/blog_icon.svg);
                 }
             </style>
     
