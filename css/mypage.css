@@ -1,22 +1,29 @@
 @charset "utf-8";
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 @media screen and(max-width:1024px) {
     
 }
 *{
     margin: 0px;
     padding: 0px;
+    border: 0;
+    box-sizing: border-box;
     font-family: 'Pretendard', 'Apple SD Gothic Neo', '맑은 고딕', '맑은고딕', 'Malgun Gothic', sans-serif;
 }
 a {
     text-decoration: none;
-    color: #0000008f;
-    font-size: 18px  Pretendard;
+    color: black;
 }
 body {
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
+}
+button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 header .point_header{
     color: aqua;
@@ -29,20 +36,173 @@ h2{
     color: white;
     background-color: red;
 }
+hr {
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+fieldset {
+    border: 0;
+}
 button #point_btn {
     color: white;
     background-color: #1273e4;
-}
-.active {
-    color: red;
-    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    color: rgba(0,0,0,.8);
+    background-color: #fafafa;
+    border-radius: 18px;
+    border: none;
+    outline: none;
 }
 nav {
     display: block;
     float: left;
     width: 238px;
     padding-left: 31px;
+    padding-top: 51px;
 }
-li {
+.navi li{
+    margin-bottom: 26px;
+    font-size: 18px  Pretendard;
+}
+.navi a {
     margin-bottom: 18px;
+    font-size: 18px  Pretendard;
+    color: #0000008F;
+}
+#active {
+    color: red;
+    font-weight: bold;
+}
+.noti-check-label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 16px;
+}
+.noti-checkbox {
+    margin: 0 10px 0 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.noti-check-item {
+    padding: 12px 0;
+}
+#notifi {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.87);
+    -webkit-text-size-adjust: none;
+}
+.noti-guide {
+    font-size: 14px;
+    padding: 16px 0;
+    color: rgba(0,0,0,.56);
+}
+#noti-list {
+    float: right;
+    width: 724px;
+    margin-right: 31px;
+    padding-top: 54px;
+}
+.list-none {
+    background: #fff;
+    padding-top: 125px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    height: 373px;
+}
+.list-none p {
+    display: block;
+    padding-top: 16px;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.56);
+}
+.btn_red {
+    display: inline-block;
+    border: 1px solid rgb(242, 17, 76);
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: normal;
+    color: rgb(230, 28, 81);
+    text-align: center;
+    box-sizing: border-box;
+    vertical-align: top;
+    width: 200px;
+    height: 48px;
+    margin-top: 44px;
+    line-height: 48px;
+}
+.noti-confirm-button {
+    width: 144px;
+    height: 52px;
+    background: #f05;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    padding: 1px 6px;
+    cursor: pointer;
+}
+#usercoupon {
+    width: 724px;
+    margin-right: 31px;
+    padding-top: 54px;
+    height: auto;
+    border: none;
+    font-size: 18px;
+    line-height: 1;
+}
+.sub_wrap {
+    width: 1024px !important;
+    margin: 0 auto 0 auto;
+    padding-bottom: 50px;
+}
+.point {
+    padding-top: 54px;
+}
+.point-list {
+    position: relative;
+    padding: 24px 0 26px;
+}
+footer {
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -200px;
 }
