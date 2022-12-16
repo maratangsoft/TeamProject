@@ -37,6 +37,22 @@ function loaded(){
                   filterCityChilds[i].setAttribute('style', 'display: block;');
             };
       }
+      // 이벤트: 햄버거버튼 클릭시 드로워 열기
+      document.querySelector('.top_header #btn_more').onclick = () => {
+            document.querySelector('#header_drawer').setAttribute('style', 'display: flex;');
+      };
+      // 이벤트: X버튼 클릭시 드로워 닫기
+      document.querySelector('#header_drawer #btn_drawer_close').onclick = () => {
+            document.querySelector('#header_drawer').setAttribute('style', 'display: none');
+      };
+      // 이벤트: 드로워 내부 서브메뉴 열기
+      document.querySelector('#header_drawer #drawer_product').onclick = () => {
+            document.querySelector('#header_drawer #drawer_product>ul').setAttribute('style', 'display: block')
+      };
+      document.querySelector('#header_drawer #drawer_more').onclick = () => {
+            document.querySelector('#header_drawer #drawer_more>ul').setAttribute('style', 'display: block')
+      };
+
       // 이벤트: 위로 버튼 누르면 부드럽게 스크롤
       document.querySelector('.btn_go_top').onclick = () => {
             if(window.pageYOffset > 0 ){
