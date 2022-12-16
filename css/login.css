@@ -9,6 +9,10 @@ section{
     width: 336px;
     margin: 100px auto 0 auto;
 }
+button {
+    padding: 0;
+    cursor: pointer;
+}
 a {
     text-decoration: none;
 }
@@ -53,7 +57,6 @@ a {
     display: block;
     position: relative;
     text-align: center;
-    cursor: pointer;
     width: 100%;
 }
 .or {
@@ -76,11 +79,7 @@ a {
     color: rgba(0,0,0,0.38);
     text-align: center;
 }
-.btn_login {
-    cursor: pointer;
-}
 .reset_val {
-    cursor: pointer;
     background: url(../image/reset.png) 50% 50% no-repeat;
     display: inline-block;
     top: 50%;
@@ -91,4 +90,50 @@ a {
     border: none;
     background-size: 20px auto;
     text-indent: -9999px;
+}
+.inp_type_1 {
+    position: relative;
+    height: 48px;
+    padding: 0 16px 0 46px;
+    margin-bottom: 8px;
+    border: 1px solid rgba(0,0,0,0.26);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input {
+    position: relative;
+    top: 11px;
+    width: 100%;
+    height: 24px;
+    font-size: 18px;
+    color: #0000008F;
+}
+.btn_login{
+    display: block;
+    width: 100%;
+    height: 56px;
+    margin-top: 16px;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 56px;
+    background: linear-gradient(to right, rgba(255,0,85,1) 1%,rgba(230,34,67,1) 100%);
+    color: white;
+}
+.link_half{
+    overflow: hidden;
+    position: relative;
+    height: 56px;
+    margin-top: 9px;
+}
+.link_half div {
+    float: left;
+    width: 50%;
+    height: 56px;
+    text-align: center;
+}
+.link_half div a {
+    height: 56px;
+    font-size: 16px;
+    line-height: 56px;
+    color: black;
 }
