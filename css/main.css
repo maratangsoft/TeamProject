@@ -176,7 +176,7 @@ div.main_icons ul{
 /* event section */
 .main_event{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     position: relative;
     flex-direction: column;
    
@@ -185,7 +185,7 @@ div.main_icons ul{
     width: 100%
 }
 .swiper img{
-    width: 964px;
+    width: 100%;
 }
 
 
