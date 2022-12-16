@@ -1,7 +1,8 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 *{
-      margin: 0px;
-      padding: 0px;
-      font-family: 'Pretendard', 'Apple SD Gothic Neo', '맑은 고딕', '맑은고딕', 'Malgun Gothic', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Pretendard', sans-serif;
 }
 a{
       text-decoration: none;

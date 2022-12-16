@@ -20,4 +20,13 @@ function loaded(){
                   window.scrollTo({top:0, behavior:"smooth"});
             }
       };
+      // 스와이퍼 초기화
+      const swiper = new Swiper('.swiper', {
+            navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+            },
+            slidesPerView: 4,
+            spaceBetween: 10,
+          });
 }
