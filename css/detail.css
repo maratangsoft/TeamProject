@@ -1,7 +1,8 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 *{
     padding: 0px;
     margin: 0px;
-    font-family: 'Pretendard', 'Apple SD Gothic Neo', '맑은 고딕', '맑은고딕', 'Malgun Gothic', sans-serif;
+    font-family: 'Pretendard', sans-serif;
 }
 a{
     text-decoration: none;
@@ -20,6 +21,7 @@ button{
     width: 100%;
     height: 72px;
     background-color: #f7323f;
+    z-index: 1;
 }
 header{
     position: absolute;
@@ -32,10 +34,12 @@ header{
 .top_header{
     display: flex;
     position: fixed;
-    width: 1024px;
+    width: 964px;
+    padding: 0px 30px;
     height: 72px;
     align-items: center;
     justify-content: space-between;
+    z-index: 1;
 }
 .top_header #btn_more{
     display: none;
@@ -46,13 +50,9 @@ header{
 }
 .top_header #logo{
     width: 95px;
-    margin-left: 20px;
 }
 .top_header img{
     width: 95px;
-}
-.top_header #top_nav{
-    margin-right: 10px;
 }
 .top_header #top_nav>li{
     display: inline-block;
@@ -90,13 +90,62 @@ header{
 }
 
 #content{
-    width: 1024px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 72px;
+    display: flex;
+    flex-direction: column;
+    width: 964px;
+    margin: 0px auto;
+    padding-top: 112px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 #upper_content{
     display: flex;
+}
+#upper_content #gallery{
+    width: 490px;
+}
+#upper_content #big_picture{
+    position: relative;
+    height: 348px;
+}
+#upper_content #big_picture img{
+    position: absolute;
+}
+
+#upper_content #introduce{
+    display: flex;
+    flex-direction: column;
+    width: 454px;
+    padding-left: 20px;
+    background-color: white;
+}
+#upper_content .swiper{
+    width: 490px;
+    height: 80px;
+    margin-top: 10px;
+}
+#tab>ul{
+    display: flex;
+}
+#tab li{
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+}
+#tab>ul :last-child{
+    flex-grow: 1;
+}
+#reservation #input_date{
+    margin: 32px 0px;
+    width: 248px;
+    height: 40px;
+}
+
+#info{
+    display: none;
+}
+
+#review{
+    display: none;
 }
 
 .btn_go_top{
@@ -128,13 +177,11 @@ header{
     .top_header #btn_more{
         display: inline-block;
         top: 0;
-        margin-left: 20px;
     }
     .top_header #logo{
         position: absolute;
         left: 50%;
         transform: translate(-50%);
-        margin: 0px;
     }
     .top_header>#logo>img{
         content: url('../image/logo.svg');
