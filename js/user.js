@@ -51,6 +51,7 @@ function join(){
 }
 
 function login(){
+      
       //input요소에 입력한 값 받아오기
       let inputEmail = document.querySelector('#email').value;
       let inputPassword = document.querySelector('#upw').value;
@@ -67,10 +68,9 @@ function login(){
                         let user = JSON.parse(result);
                         loginEmail = user.email;
                         loginNickname = user.nickname;
-                        alert(loginEmail+", "+loginNickname);
-
                         //메인페이지로 넘어가기
                         location.href='../index.html';
+                        alert(loginNickname+" 님 환영합니다.");
                   }
             }
       };
