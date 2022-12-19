@@ -279,9 +279,11 @@ button{
 .sub_header .filter_title{
       display: none;
       position: relative;
+      padding: 0px 20px;
       width: 100%;
+      box-sizing: border-box;
       height: 50px;
-      font-size: 2em;
+      font-size: 1.5em;
 }
 .sub_header .filter_title>p{
       position: absolute;
@@ -324,16 +326,16 @@ button{
 }
 @media screen and (max-width: 1024px) {
       .sub_header h1{
-            display: none;
+            position: absolute;
+            top: 138px;
+            color: white;
+            z-index: 1;
       }
       .sub_header .filter_label{
             width: 100%;
             font-size: 0.8em;
             background-color: lightgray;
             border-radius: 6px;
-      }
-      .sub_header .filter_label:hover .filter_box{
-            display: none;
       }
       .sub_header .filter_label p{
             color: black;
@@ -351,6 +353,7 @@ button{
       .sub_header .filter_title{
             display: flex;
             align-items: center;
+            justify-content: right;
       }
       .sub_header .filter_city{
             width: 25%;
@@ -358,18 +361,19 @@ button{
             padding-right: 0px;
       }
       .sub_header .filter_city li{
-            font-size: 1.2em;
             width: 100%;
             border-top: 1px solid gray;
             border-bottom: 1px solid gray;
             padding-top: 10px;
             padding-bottom: 10px;
       }
+      .sub_header .filter_box li:hover{
+            background-color: lightgray;
+      }
       .sub_header .filter_city_child{
             width: 72%;
       }
       .sub_header .filter_city_child li{
-            font-size: 1.2em;
             width: 100%;
             border-top: 1px solid gray;
             border-bottom: 1px solid gray;
@@ -475,6 +479,29 @@ aside{
       border-color: rgba(200, 200, 200, 0.5);
       text-align: center;
 }
+@media screen and (max-width: 1024px) {
+      aside{
+            display: none;
+      }
+      #content_wrap{
+            width: 100%;
+            margin-top: 88px;
+      }
+      #content{
+            width: 100%;
+            margin: 0px 0px;
+      }
+      #content a{
+            width: 100%;
+      }
+      #content img{
+            width: 100%;
+            object-fit: cover;
+      }
+      #content .text_container{
+            width: 100%;
+      }
+}
 
 footer{
       background-color: rgb(245,245,245);
@@ -500,27 +527,4 @@ footer #btn_facebook{
 }
 footer #btn_blog{
       background-image: url(../image/blog_icon.svg);
-}
-@media screen and (max-width: 1024px) {
-      aside{
-            display: none;
-      }
-      #content_wrap{
-            width: 100%;
-            margin-top: 88px;
-      }
-      #content{
-            width: 100%;
-            margin: 0px 0px;
-      }
-      #content a{
-            width: 100%;
-      }
-      #content img{
-            width: 100%;
-            object-fit: cover;
-      }
-      #content .text_container{
-            width: 100%;
-      }
 }
