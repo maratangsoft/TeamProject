@@ -19,7 +19,6 @@ button{
 .header_bg{
       height: 211px;
       background-color: #f7323f;
-      background-size: cover;
   }
   .top_header_bg{
       position: fixed;
@@ -506,6 +505,7 @@ aside{
 footer{
       background-color: rgb(245,245,245);
       width: 100%; 
+      box-sizing: border-box;
       padding: 40px 20px 20px 20px; 
       margin-top: 120px;
       color: #99999a;

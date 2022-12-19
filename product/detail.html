@@ -12,11 +12,12 @@
     </head>
 
     <body onload="loaded()">
+        <div class="top_header_bg"></div>
         <header>
-            <div class="top_header_bg"></div>
             <div class="top_header">
                 <button id="btn_more"></button>
                 <a href="../index.html" id="logo"><img src="../image/logo_white.svg" alt="여기어때"/></a>
+                <!-- 데스크탑 내비 메뉴 -->
                 <ul id="top_nav">
                     <li><a href="../product/srp/1.html"><span>내주변</span></a></li>
                     <li><a href="../my/reservations.html"><span>예약내역</span></a></li>
@@ -33,6 +34,56 @@
                     <li><a href="../user/login.html"><span>로그인</span></a></li>
                 </ul>
             </div>
+            <!-- 모바일 드로워 메뉴 -->
+            <section id="header_drawer">
+                <div class="drawer_body">
+                    <div class="drawer_fixed">
+                        <div class="drawer_profile">
+                            <p>로그인 후 예약하시면<br>할인 쿠폰과 추가 혜택을 받을 수 있어요</p>
+                            <br>
+                            <p><a href="../user/login.html">로그인</a></p>
+                        </div>
+                        <ul class="drawer_nav">
+                            <li><a href="../my/points.html">-<br>포인트</a></li>
+                            <li><a href="../my/coupon.html">-<br>쿠폰함</a></li>
+                        </ul>
+                    </div>
+                    <div class="drawer_menu">
+                        <ul>
+                            <li><a href="../index.html">홈</a></li>
+                            <li id="drawer_product">
+                                숙소유형
+                                <ul>
+                                    <li><a href="../product/home/1.html">모텔</a></li>
+                                    <li><a href="../product/search/2/2001.html">호텔·리조트</a></li>
+                                    <li><a href="../product/search/3/3001.html">펜션</a></li>
+                                    <li><a href="../product/search/4/4001.html">게스트하우스</a></li>
+                                    <li><a href="../product/search/5/5001.html">캠핑·글램핑</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../product/srp/1.html">내주변</a></li>
+                            <li><a href="../my/reservations.html">예약 내역</a></li>
+                            <li id="drawer_more">
+                                더보기
+                                <ul>
+                                    <li><a href="../more/notice.html">공지사항</a></li>
+                                    <li><a href="../more/event.html">이벤트</a></li>
+                                    <li><a href="../more/faq.html">고객문의</a></li>
+                                    <li><a href="../my/notifications.html">알림설정</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="drawer_tel">
+                            <p>여기어때 고객행복센터</p>
+                            <p>1670-6250</p>
+                            <p>오전 9시 - 새벽 3시</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="drawer_btn_wrapper">
+                    <button id="btn_drawer_close"></button>
+                </div>
+            </section>
         </header>
         <div id="content">
             <div id="upper_content">
@@ -46,11 +97,11 @@
                     </ul>
                     <div class="swiper">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="../image/product_detail1.jpg" alt="no image" width="109px" height="80px"></div>
-                            <div class="swiper-slide"><img src="../image/product_detail2.jpg" alt="no image" width="109px" height="80px"></div>
-                            <div class="swiper-slide"><img src="../image/product_detail3.jpg" alt="no image" width="109px" height="80px"></div>
-                            <div class="swiper-slide"><img src="../image/product_detail4.jpg" alt="no image" width="109px" height="80px"></div>
-                            <div class="swiper-slide"><img src="../image/product_detail5.jpg" alt="no image" width="109px" height="80px"></div>
+                            <div class="swiper-slide"><img src="../image/product_detail1.jpg" alt="no image"></div>
+                            <div class="swiper-slide"><img src="../image/product_detail2.jpg" alt="no image"></div>
+                            <div class="swiper-slide"><img src="../image/product_detail3.jpg" alt="no image"></div>
+                            <div class="swiper-slide"><img src="../image/product_detail4.jpg" alt="no image"></div>
+                            <div class="swiper-slide"><img src="../image/product_detail5.jpg" alt="no image"></div>
                         </div>
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
@@ -58,9 +109,9 @@
                 </section>
                 <section id="introduce">
                     <p id="name">역삼 리치웰</p>
-                    <p id="score"><span>9.3&nbsp;추천해요</span> 리뷰&nbsp;3,494개</p>
+                    <p><span id="score">9.3</span>&nbsp;&nbsp;<span id="recommend">추천해요</span>&nbsp;&nbsp;&nbsp;&nbsp;<span id="review_count">리뷰 3,494개</span></p>
                     <p id="location">서울 강남구 역삼동 677-9</p>
-                    <div>
+                    <div id="owner_comment">
                         <p>사장님 한마디</p>
                         <p>▣리치웰 호텔 전객실 Netflix 프리존 (무료시청가능,자동로그인)<br>
                             ▣ 전 객실 2인 기준적용<br>
@@ -95,63 +146,75 @@
                 <ul>
                     <li>
                         <div class="res_item">
-                            <img src="../image/product_detail1.jpg" alt="no image" width="376px" height="226px">
-                            <div>스페셜 (랜덤배정)</div>
+                            <img src="../image/product_detail1.jpg" alt="no image">
                             <div>
-                                <p>대실</p>
-                                <p>숙소에 문의</p>
-                                <hr>
-                                <button>숙소에 문의하세요</button>
-                            </div>
-                            <div>
-                                <p>숙박</p>
-                                <p>숙소에 문의</p>
-                                <hr>
-                                <button>숙소에 문의하세요</button>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="res_item">
-                            <img src="../image/product_detail2.jpg" alt="no image" width="376px" height="226px">
-                            <div>스탠다드(도보전용/주차불가)</div>
-                            <div>
-                                <p>대실</p>
-                                <p><span>예약</span>25,000원</p>
-                                <hr>
-                                <p>마감시간<span>22시까지</span></p>
-                                <p>이용시간<span>최대 4시간</span></p>
-                                <button>대실 예약</button>
-                            </div>
-                            <div>
-                                <p>숙박</p>
-                                <p><span>예약</span>99,800원</p>
-                                <hr>
-                                <p>입실시간<span>21시부터</span></p>
-                                <p>퇴실시간<span>익일 12시</span></p>
-                                <button>숙박 예약</button>
+                                <div class="room_name">스페셜 (랜덤배정)</div>
+                                <div class="charge">
+                                    <div>
+                                        <p>대실</p>
+                                        <p>숙소에 문의</p>
+                                        <hr>
+                                        <button>숙소에 문의하세요</button>
+                                    </div>
+                                    <div>
+                                        <p>숙박</p>
+                                        <p>숙소에 문의</p>
+                                        <hr>
+                                        <button>숙소에 문의하세요</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="res_item">
-                            <img src="../image/product_detail3.jpg" alt="no image" width="376px" height="226px">
-                            <div>스탠다드</div>
+                            <img src="../image/product_detail2.jpg" alt="no image">
                             <div>
-                                <p>대실</p>
-                                <p><span>예약</span>30,000원</p>
-                                <hr>
-                                <p>마감시간<span>22시까지</span></p>
-                                <p>이용시간<span>최대 4시간</span></p>
-                                <button>대실 예약</button>
+                                <div class="room_name">스탠다드(도보전용/주차불가)</div>
+                                <div class="charge">
+                                    <div>
+                                        <p>대실</p>
+                                        <p><span>예약</span>25,000원</p>
+                                        <hr>
+                                        <p>마감시간<span>22시까지</span></p>
+                                        <p>이용시간<span>최대 4시간</span></p>
+                                        <button>대실 예약</button>
+                                    </div>
+                                    <div>
+                                        <p>숙박</p>
+                                        <p><span>예약</span>99,800원</p>
+                                        <hr>
+                                        <p>입실시간<span>21시부터</span></p>
+                                        <p>퇴실시간<span>익일 12시</span></p>
+                                        <button>숙박 예약</button>
+                                    </div>
+                                </div>
                             </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="res_item">
+                            <img src="../image/product_detail3.jpg" alt="no image">
                             <div>
-                                <p>숙박</p>
-                                <p><span>예약</span>119,800원</p>
-                                <hr>
-                                <p>입실시간<span>21시부터</span></p>
-                                <p>퇴실시간<span>익일 12시</span></p>
-                                <button>숙박 예약</button>
+                                <div class="room_name">스탠다드</div>
+                                <div class="charge">
+                                    <div>
+                                        <p>대실</p>
+                                        <p><span>예약</span>30,000원</p>
+                                        <hr>
+                                        <p>마감시간<span>22시까지</span></p>
+                                        <p>이용시간<span>최대 4시간</span></p>
+                                        <button>대실 예약</button>
+                                    </div>
+                                    <div>
+                                        <p>숙박</p>
+                                        <p><span>예약</span>119,800원</p>
+                                        <hr>
+                                        <p>입실시간<span>21시부터</span></p>
+                                        <p>퇴실시간<span>익일 12시</span></p>
+                                        <button>숙박 예약</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </li>
