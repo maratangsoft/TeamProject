@@ -16,23 +16,73 @@
             <div class="top_header">
                 <button id="btn_more"></button>
                 <a href="../../index.html" id="logo"><img src="../../image/logo_white.svg" alt="여기어때"/></a>
+                <!-- 데스크탑 내비 메뉴 -->
                 <ul id="top_nav">
-                    <li><a href="../srp/1.html"><span>내주변</span></a></li>
-                    <li><a href="../../my/reservations.html"><span>예약내역</span></a></li>
+                    <li><a href="./product/srp/1.html"><span>내주변</span></a></li>
+                    <li><a href="./my/reservations.html"><span>예약내역</span></a></li>
                     <li id="more">
                         <span>더보기</span>
                         <ul id="top_nav_submenu">
-                            <li><a href="../../more/notice.html">공지사항</a></li>
-                            <li><a href="../../more/event.html">이벤트</a></li>
-                            <li><a href="../../more/faq.html">자주 묻는 질문</a></li>
+                            <li><a href="./more/notice.html">공지사항</a></li>
+                            <li><a href="./more/event.html">이벤트</a></li>
+                            <li><a href="./more/faq.html">자주 묻는 질문</a></li>
                             <li>1:1 문의</li>
                             <li>약관 및 정책</li>
                         </ul>
                     </li>
-                    <li><a href="../../user/login.html"><span>로그인</span></a></li>
+                    <li><a href="./user/login.html"><span>로그인</span></a></li>
                 </ul>
-                <span></span>
             </div>
+            <!-- 모바일 드로워 메뉴 -->
+            <section id="header_drawer">
+                <div class="drawer_body">
+                    <div class="drawer_fixed">
+                        <div class="drawer_profile">
+                            <p>로그인 후 예약하시면<br>할인 쿠폰과 추가 혜택을 받을 수 있어요</p>
+                            <br>
+                            <p><a href="./user/login.html">로그인</a></p>
+                        </div>
+                        <ul class="drawer_nav">
+                            <li><a href="./my/points.html">-<br>포인트</a></li>
+                            <li><a href="./my/coupon.html">-<br>쿠폰함</a></li>
+                        </ul>
+                    </div>
+                    <div class="drawer_menu">
+                        <ul>
+                            <li><a href="./index.html">홈</a></li>
+                            <li id="drawer_product">
+                                숙소유형
+                                <ul>
+                                    <li><a href="./product/home/1.html">모텔</a></li>
+                                    <li><a href="./product/search/2/2001.html">호텔·리조트</a></li>
+                                    <li><a href="./product/search/3/3001.html">펜션</a></li>
+                                    <li><a href="./product/search/4/4001.html">게스트하우스</a></li>
+                                    <li><a href="./product/search/5/5001.html">캠핑·글램핑</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./product/srp/1.html">내주변</a></li>
+                            <li><a href="./my/reservations.html">예약 내역</a></li>
+                            <li id="drawer_more">
+                                더보기
+                                <ul>
+                                    <li><a href="./more/notice.html">공지사항</a></li>
+                                    <li><a href="./more/event.html">이벤트</a></li>
+                                    <li><a href="./more/faq.html">고객문의</a></li>
+                                    <li><a href="./my/notifications.html">알림설정</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="drawer_tel">
+                            <p>여기어때 고객행복센터</p>
+                            <p>1670-6250</p>
+                            <p>오전 9시 - 새벽 3시</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="drawer_btn_wrapper">
+                    <button id="btn_drawer_close"></button>
+                </div>
+            </section>
             <div class="sub_header">
                 <h1>제주지역편</h1>
                 <div class="filter_label">
@@ -186,7 +236,21 @@
         </div>
         <button class="btn_go_top"></button>
         <footer>
-            
+            <div>회사소개 | 이용약관 | 개인정보처리방침 | 소비자 분쟁해결 기준 | 사업자 정보확인</div>
+            <div>여기어때 마케팅센터 | 액티비티 호스트센터 | HOTEL 여기어때 | 콘텐츠산업진흥법에의한 표시</div>
+            <br>
+            <div><b>고객행복센터 1670-6250</b> 오전 9시 - 새벽 3시</div>
+            <br>
+            <div>(주) 여기어때컴퍼니</div>
+            <div>주소 : 서울특별시 강남구 봉은사로 479, 479타워 11층 | 대표이사 : 정명훈 | 사업자등록번호: 742-86-00224</div>
+            <div>통신판매번호 : 2017-서울강남-01779 | 관광사업자 등록번호: 제1026-24호 | 전화번호 : 1670-6250 | 전자우편주소 : help@goodchoice.kr</div>
+            <div>(주) 여기어때컴퍼니는 통신판매중개자로서 통신판매의 당사자가 아니며, 상품의 예약, 이용 및 환불 등과 관련한 의무와 책임은 각 판매자에게 있습니다.</div>
+            <br>
+            <div>Copyright GC COMPANY Corp. All rights reserved.</div>
+            <br>
+            <hr>
+            <br>
+            <div><button id="btn_facebook"></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="btn_blog"></button></div>
         </footer>
     </body>
 </html>

@@ -19,7 +19,6 @@ button{
 .header_bg{
       height: 211px;
       background-color: #f7323f;
-      background-size: cover;
   }
   .top_header_bg{
       position: fixed;
@@ -204,6 +203,7 @@ button{
           position: absolute;
           height: 44px;
           background-color: white;
+          z-index: 0;
       }
       .header_bg{
           display: none;
@@ -215,9 +215,11 @@ button{
           position: absolute;
           width: 100%;
           box-sizing: border-box;
+          padding: 0px 20px;
           height: 44px;
           background-color: white;
           justify-content: space-between;
+          z-index: 0;
       }
       .top_header #btn_more{
           display: inline-block;
@@ -240,21 +242,19 @@ button{
       }
 
       .sub_header{
-              display: flex;
-              height: 44px;
-              margin-top: 44px;
-              justify-content: center;
-              align-items: center;
-              background-color: white;
+            display: flex;
+            height: 44px;
+            margin-top: 44px;
+            padding: 0px 20px;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
       }
       .sub_header h1{
               font-size: 1.2em;
               margin-top: 0px;
               color: black;
       }
-}
-.sub_header .filter_label{
-      margin-top: 14px;
 }
 .sub_header .filter_label p{
       font-weight: bold;
@@ -278,9 +278,11 @@ button{
 .sub_header .filter_title{
       display: none;
       position: relative;
+      padding: 0px 20px;
       width: 100%;
+      box-sizing: border-box;
       height: 50px;
-      font-size: 2em;
+      font-size: 1.5em;
 }
 .sub_header .filter_title>p{
       position: absolute;
@@ -323,26 +325,21 @@ button{
 }
 @media screen and (max-width: 1024px) {
       .sub_header h1{
-            display: none;
+            position: absolute;
+            top: 138px;
+            color: white;
+            z-index: 1;
       }
       .sub_header .filter_label{
-            position: absolute;
-            top: -6px;
-            width: 92%;
-            margin-left: 4%;
-            margin-right: 4%;
-            padding-top: 6px;
-            padding-bottom: 6px;
+            width: 100%;
             font-size: 0.8em;
             background-color: lightgray;
             border-radius: 6px;
-            z-index: 1;
-      }
-      .sub_header .filter_label:hover .filter_box{
-            display: none;
       }
       .sub_header .filter_label p{
             color: black;
+            padding: 8px;
+            text-align: center;
       }
       .sub_header .filter_box{
             position: fixed;
@@ -355,6 +352,7 @@ button{
       .sub_header .filter_title{
             display: flex;
             align-items: center;
+            justify-content: right;
       }
       .sub_header .filter_city{
             width: 25%;
@@ -362,18 +360,19 @@ button{
             padding-right: 0px;
       }
       .sub_header .filter_city li{
-            font-size: 1.2em;
             width: 100%;
             border-top: 1px solid gray;
             border-bottom: 1px solid gray;
             padding-top: 10px;
             padding-bottom: 10px;
       }
+      .sub_header .filter_box li:hover{
+            background-color: lightgray;
+      }
       .sub_header .filter_city_child{
             width: 72%;
       }
       .sub_header .filter_city_child li{
-            font-size: 1.2em;
             width: 100%;
             border-top: 1px solid gray;
             border-bottom: 1px solid gray;
@@ -479,32 +478,6 @@ aside{
       border-color: rgba(200, 200, 200, 0.5);
       text-align: center;
 }
-
-footer{
-      background-color: rgb(245,245,245);
-      width: 100%; 
-      padding: 40px 20px 20px 20px; 
-      margin-top: 120px;
-      color: #99999a;
-}
-footer div{
-      font-size: 0.8em;
-      margin-top: 3px;
-      margin-bottom: 3px;
-}
-footer button{
-      background-color: transparent;
-      border: none;
-      background-size: contain; 
-      width: 24px; 
-      height: 24px;
-}
-footer #btn_facebook{
-      background-image: url(../image/Facebook_logo.svg);
-}
-footer #btn_blog{
-      background-image: url(../image/blog_icon.svg);
-}
 @media screen and (max-width: 1024px) {
       aside{
             display: none;
@@ -527,4 +500,31 @@ footer #btn_blog{
       #content .text_container{
             width: 100%;
       }
+}
+
+footer{
+      background-color: rgb(245,245,245);
+      width: 100%; 
+      box-sizing: border-box;
+      padding: 40px 20px 20px 20px; 
+      margin-top: 120px;
+      color: #99999a;
+}
+footer div{
+      font-size: 0.8em;
+      margin-top: 3px;
+      margin-bottom: 3px;
+}
+footer button{
+      background-color: transparent;
+      border: none;
+      background-size: contain; 
+      width: 24px; 
+      height: 24px;
+}
+footer #btn_facebook{
+      background-image: url(../image/Facebook_logo.svg);
+}
+footer #btn_blog{
+      background-image: url(../image/blog_icon.svg);
 }

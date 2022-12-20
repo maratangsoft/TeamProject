@@ -17,17 +17,22 @@ function loaded(){
                   }
             }
       }
-      // 모바일 전용
-      if (window.innerWidth <= 1024){
-            // 이벤트: 모바일에서 필터 누르면 필터목록 펼치기
-            document.querySelector('.filter_label').onclick = () => {
-                  document.querySelector('.sub_header .filter_box').setAttribute('style', 'display: block;');
-            };
-            // 이벤트: 모바일 필터 캔슬버튼 누르면 필터목록 닫기
-            document.querySelector('#btn_cancel').onclick = () => {
-                  document.querySelector('.sub_header .filter_box').setAttribute('style', 'display: none;');
-            };
-      }
+      // 이벤트: 데스크탑에서 필터에 커서 올리면 필터목록 펼치기
+      document.querySelector('.filter_label').onmouseover = () => {
+            if (window.innerWidth > 1024){
+                  document.querySelector('.filter_box').setAttribute('style', 'display: block;');
+            }
+      };
+      // 이벤트: 모바일에서 필터 누르면 필터목록 펼치기
+      document.querySelector('.filter_label').onclick = () => {
+            if (window.innerWidth <= 1024){
+                  document.querySelector('.filter_box').setAttribute('style', 'display: block;');
+            }
+      };
+      // 이벤트: 모바일 필터 캔슬버튼 누르면 필터목록 닫기
+      document.querySelector('.sub_header #btn_cancel').onclick = () => {
+            document.querySelector('.filter_box').setAttribute('style', 'display: none;');
+      };
       // 이벤트: 지역 필터에 마우스 올리면 세부지역 목록 표시
       for (let i=0; i<filterCities.length; i++){
             filterCities[i].onmouseover = () => {

@@ -16,17 +16,13 @@ button{
     background-color: transparent;
 }
 
-.header_bg{
-    height: 211px;
-    background-color: #f7323f;
-    background-size: cover;
-}
 .top_header_bg{
     position: fixed;
     top: 0px;
     width: 100%;
     height: 72px;
-    z-index: 1;
+    background-color: #f7323f;
+    z-index: 2;
 }
 header{
     position: absolute;
@@ -44,11 +40,11 @@ header{
     padding: 0px 30px;
     align-items: center;
     justify-content: space-between;
-    z-index: 1;
+    z-index: 2;
 }
 .top_header #btn_more{
     display: none;
-    background-image: url('./image/hamburger.png');
+    background-image: url('../image/hamburger.png');
     background-size: contain;
     width: 16px;
     height: 16px;
@@ -110,7 +106,7 @@ header{
 #header_drawer #btn_drawer_close{
     width: 16px;
     height: 16px;
-    background-image: url(./image/x.png);
+    background-image: url(../image/x.png);
     background-size: contain;
     margin-top: 20px;
 }
@@ -218,6 +214,7 @@ header{
         height: 44px;
         background-color: white;
         justify-content: space-between;
+        padding: 0px 20px;
     }
     .top_header #btn_more{
         display: inline-block;
@@ -229,7 +226,7 @@ header{
         transform: translate(-50%);
     }
     .top_header>#logo>img{
-        content: url('./image/logo.svg');
+        content: url('../image/logo.svg');
     }
     .top_header #top_nav{
         display: none;
@@ -276,33 +273,149 @@ header{
 #upper_content #big_picture img{
     position: absolute;
 }
-
 #upper_content #introduce{
     display: flex;
     flex-direction: column;
     width: 454px;
-    padding-left: 20px;
+    padding-left: 40px;
     background-color: white;
+}
+#upper_content #introduce #name{
+    font-weight: bold;
+    font-size: 1.7em;
+    margin-bottom: 8px;
+}
+#upper_content #introduce #score{
+    background-color: #ffa726;
+    border-radius: 4px;
+    padding: 2px;
+    color: white;
+}
+#upper_content #introduce #recommend{
+    font-size: 1.15em;
+    color: #ffa726;
+}
+#upper_content #introduce #review_count{
+    font-size: 1.15em;
+    color: gray;
+}
+#upper_content #introduce #location{
+    font-size: 1.15em;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+#upper_content #introduce #owner_comment{
+    background-color: lightgray;
+    border-radius: 6px;
+    padding: 20px;
+    font-size: 0.95em;
+    color: rgb(100, 100, 100);
+}
+#upper_content #introduce #owner_comment :first-child{
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: black;
 }
 #upper_content .swiper{
     width: 490px;
-    height: 80px;
     margin-top: 10px;
 }
+#upper_content .swiper-slide>img{
+    width: 109px;
+}
+@media screen and (max-width: 1024px) {
+    #content{
+        padding-top: 44px;
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #upper_content{
+        flex-direction: column;
+    }
+    #upper_content #gallery{
+        width: 100%;
+    }
+    #upper_content #big_picture{
+        display: none;
+    }
+    #upper_content #introduce{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px;
+    }
+    #upper_content .swiper{
+        width: 100%;
+        margin-top: 0px;
+    }
+    #upper_content .swiper-slide>img{
+        width: 100%;
+    }
+}
+
 #tab>ul{
     display: flex;
 }
 #tab li{
     padding: 10px;
     border-bottom: 1px solid lightgray;
+    font-size: 1.2em;
+}
+#tab>ul :first-child{
+    color: #ff0055;
+    border-bottom: 3px solid #ff0055;
 }
 #tab>ul :last-child{
     flex-grow: 1;
 }
+
 #reservation #input_date{
     margin: 32px 0px;
     width: 248px;
     height: 40px;
+}
+#reservation .res_item{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 20px 0px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+}
+#reservation .res_item img{
+    width: 376px;
+    height: 226px;
+    object-fit: cover;
+}
+#reservation .room_name{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+#reservation .charge{
+    display: flex;
+    justify-content: space-evenly;
+}
+#reservation .charge>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 254px;
+    height: 197px;
+    margin-left: 20px;
+}
+#reservation .charge>div>:first-child{
+    font-size: 1.1em;
+}
+#reservation .res_item button{
+    width: 100%;
+    background-color: rgba(255,0,85,1);
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 1.1em;
 }
 
 #info{
@@ -328,28 +441,44 @@ header{
 }
 
 @media screen and (max-width: 1024px) {
-    #content{
-        padding-top: 44px;
-        width: 100%;
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-    #upper_content{
+    #reservation .res_item{
         flex-direction: column;
     }
-    #upper_content #gallery{
+    #reservation .res_item img{
         width: 100%;
+        height: fit-content;
+        object-fit: cover;
     }
-    #upper_content #big_picture{
-        width: 100%;
+    #reservation .room_name{
+        margin-left: 0px;
+        margin-top: 10px;
     }
-    #upper_content #big_picture img{
-        width: 100%;
-    }
-    #upper_content #introduce{
-        width: 100%;
-    }
-    #upper_content .swiper{
-        width: 100%
-    }
+
+}
+
+footer{
+    background-color: rgb(245,245,245);
+    width: 100%; 
+    box-sizing: border-box;
+    padding: 40px 20px 20px 20px; 
+    margin-top: 120px;
+    color: #99999a;
+}
+footer div{
+    font-size: 0.8em;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+footer button{
+    background-color: transparent;
+    border: none;
+    background-size: contain; 
+    width: 24px; 
+    height: 24px;
+}
+footer #btn_facebook{
+    background-image: url(../image/Facebook_logo.svg);
+}
+footer #btn_blog{
+    background-image: url(../image/blog_icon.svg);
 }
