@@ -265,7 +265,7 @@ h2{
 }
 .main_icons ul{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .main_icons li{    
     width: 161px;
@@ -293,7 +293,6 @@ h2{
 }
 .main_news ul{
     display: flex;
-    justify-content: space-evenly;
     width: 100%;
 }
 .main_news li{
