@@ -4,17 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>여행할때 여기어때</title>
-        <link type="text/css" rel="stylesheet" href="./css/main.css">
+        <link type="text/css" rel="stylesheet" href="./css/index.css">
+        <script src="./js/index.js"></script>
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-        <script src="./js/header_main.js">
-        </script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-        
-        
-        <script>
-           
-        </script>
     </head>
 
     <body onload="loaded()">
@@ -39,198 +33,145 @@
                     </li>
                     <li><a href="./user/login.html"><span>로그인</span></a></li>
                 </ul>
-                <!-- 모바일 드로워 메뉴 -->
-                <section class="drawer">
-                    <div class="drawer_body">
-                        <div class="drawer_fixed">
-                            <div class="drawer_profile">
-                                <p>로그인 후 예약하시면<br>할인 쿠폰과 추가 혜택을 받을 수 있어요</p>
-                                <br>
-                                <p><a href="./user/login.html">로그인</a></p>
-                            </div>
-                            <ul class="drawer_nav">
-                                <li><a href="./my/points.html">-<br>포인트</a></li>
-                                <li><a href="./my/coupon.html">-<br>쿠폰함</a></li>
-                            </ul>
-                        </div>
-                        <div class="drawer_menu">
-                            <ul>
-                                <li><a href="./index.html">홈</a></li>
-                                <li id="drawer_product">
-                                    숙소유형
-                                    <ul>
-                                        <li><a href="./product/home/1.html">모텔</a></li>
-                                        <li><a href="./product/search/2/2001.html">호텔·리조트</a></li>
-                                        <li><a href="./product/search/3/3001.html">펜션</a></li>
-                                        <li><a href="./product/search/4/4001.html">게스트하우스</a></li>
-                                        <li><a href="./product/search/5/5001.html">캠핑·글램핑</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="./product/srp/1.html">내주변</a></li>
-                                <li><a href="./my/reservations.html">예약 내역</a></li>
-                                <li id="drawer_more">
-                                    더보기
-                                    <ul>
-                                        <li><a href="./more/notice.html">공지사항</a></li>
-                                        <li><a href="./more/event.html">이벤트</a></li>
-                                        <li><a href="./more/faq.html">고객문의</a></li>
-                                        <li><a href="./my/notifications.html">알림설정</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <div class="drawer_tel">
-                                <p>여기어때 고객행복센터</p>
-                                <p>1670-6250</p>
-                                <p>오전 9시 - 새벽 3시</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="drawer_btn_wrapper">
-                        <button id="btn_drawer_close"></button>
-                    </div>
-                </section>
             </div>
-           
+            <!-- 모바일 드로워 메뉴 -->
+            <section id="header_drawer">
+                <div class="drawer_body">
+                    <div class="drawer_fixed">
+                        <div class="drawer_profile">
+                            <p>로그인 후 예약하시면<br>할인 쿠폰과 추가 혜택을 받을 수 있어요</p>
+                            <br>
+                            <p><a href="./user/login.html">로그인</a></p>
+                        </div>
+                        <ul class="drawer_nav">
+                            <li><a href="./my/points.html">-<br>포인트</a></li>
+                            <li><a href="./my/coupon.html">-<br>쿠폰함</a></li>
+                        </ul>
+                    </div>
+                    <div class="drawer_menu">
+                        <ul>
+                            <li><a href="./index.html">홈</a></li>
+                            <li id="drawer_product">
+                                숙소유형
+                                <ul>
+                                    <li><a href="./product/home/1.html">모텔</a></li>
+                                    <li><a href="./product/search/2/2001.html">호텔·리조트</a></li>
+                                    <li><a href="./product/search/3/3001.html">펜션</a></li>
+                                    <li><a href="./product/search/4/4001.html">게스트하우스</a></li>
+                                    <li><a href="./product/search/5/5001.html">캠핑·글램핑</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./product/srp/1.html">내주변</a></li>
+                            <li><a href="./my/reservations.html">예약 내역</a></li>
+                            <li id="drawer_more">
+                                더보기
+                                <ul>
+                                    <li><a href="./more/notice.html">공지사항</a></li>
+                                    <li><a href="./more/event.html">이벤트</a></li>
+                                    <li><a href="./more/faq.html">고객문의</a></li>
+                                    <li><a href="./my/notifications.html">알림설정</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="drawer_tel">
+                            <p>여기어때 고객행복센터</p>
+                            <p>1670-6250</p>
+                            <p>오전 9시 - 새벽 3시</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="drawer_btn_wrapper">
+                    <button id="btn_drawer_close"></button>
+                </div>
+            </section>
         </header>
-        <div id="container">
+
+        <div id="content">
             <div class="main_img" >
-                <a href="./more/eventView/1.html" >
-                    <img src="./image/main/mainspot_221201.jpg" style="width:100%; "> 
-                </a>
-                <div style="clear:both;"></div>
+                <a href="./more/eventView/1.html" ><img src="./image/main/mainspot_221201.jpg"></a>
             </div>
             <div class="main_icons">
-                    <div id="icons_row">
-                        <ul>
-                            <li>
-                                <a href="./product/home/1.html">
-                                    <img src="./image/main/ico_category_01.png" alt="motel">
-                                    <p>모텔</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./product/search/2/2001.html">
-                                    <img src="./image/main/ico_category_02.png" alt="hotel">
-                                    <p>호텔&리조트</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./product/search/3/3001.html">
-                                    <img src="./image/main/ico_category_03.png" alt="pension">
-                                    <p>펜션</p>
-                                </a>
-                            </li>
-                            
-                        </ul>
-                        
-                    </div>
-                    <div id="icons_row">
-                        <ul>
-                            <li>
-                                <a href="./product/search/4/4001.html">
-                                    <img src="./image/main/ico_category_04.png" alt="guesthouse">
-                                    <p>게스트하우스</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./product/search/5/5001.html">
-                                    <img src="./image/main/ico_category_05.png" alt="camping">
-                                    <p>켐핑&글램핑</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./more/eventView/6.html">
-                                    <img src="./image/main/ico_category_09.png" alt="abroad">
-                                    <p>해외여행</p>
-                                </a>
-                            </li>
-                        </ul>
-                        
-                    </div>
-                    <br>
-                    
-            </div>    
+                <ul>
+                    <li>
+                        <a href="./product/home/1.html">
+                            <img src="./image/main/ico_category_01.png" alt="motel">
+                            <p>모텔</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./product/search/2/2001.html">
+                            <img src="./image/main/ico_category_02.png" alt="hotel">
+                            <p>호텔&리조트</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./product/search/3/3001.html">
+                            <img src="./image/main/ico_category_03.png" alt="pension">
+                            <p>펜션</p>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="./product/search/4/4001.html">
+                            <img src="./image/main/ico_category_04.png" alt="guesthouse">
+                            <p>게스트하우스</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./product/search/5/5001.html">
+                            <img src="./image/main/ico_category_05.png" alt="camping">
+                            <p>캠핑&글램핑</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./more/eventView/1.html">
+                            <img src="./image/main/ico_category_09.png" alt="abroad">
+                            <p>해외여행</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
             
-            <!-- <div style="display: flex; justify-content: left; margin-left: 15%;"><h2>여기어때 소식</h2></div> -->
     
             <div class="main_news">
-                    <h2>여기어때 소식</h2>
-            
-                    <div>
-                        <ul>
-                            <li>
-                             <div id="container">
-                                <img src="./image/main/news_banner1.png" > 
-                                <div>
-                                    <p style="color: #00796b; font-size: 20px; padding-top: 10px;">여기어때 비즈니스</p>
-                                    <p style="color: rgb(155, 155, 155);  padding-bottom: 10px;">
-                                    <br>출장부터 복지까지 
-                                    <br>여기어때 비즈니스로 스마트하게</p>
-                                </div>
-                             </div>
-                            </li>
+                <h2>여기어때 소식</h2>
+                <ul>
+                    <li>
+                        <img src="./image/main/news_banner1.png" >
+                        <div>
+                            <p class="news_title">여기어때 비즈니스</p>
+                            <p class="news_msg"><br>출장부터 복지까지<br>여기어때 비즈니스로 스마트하게</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./image/main/news_re_jalnan.png" > 
+                        <div>
+                            <p class="news_title">여기어때 서체 출시</p>
+                            <p class="news_msg"><br>젊고 당당한 여기어때 잘난체<br>지금 다운로드 받으세요!</p> 
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
-                            <li>
-                                <div id="container">
-                                    <img src="./image/main/news_re_jalnan.png" > 
-                                    <div>
-                                        <p style="color: #00796b; font-size: 20px; padding-top: 10px;">여기어때 서체 출시</p>
-                                        <p style="color: rgb(155, 155, 155); padding-bottom: 10px;">
-                            
-                                        <br>젊고 당당한 여기어때 잘난체  
-                                        <br>지금 다운로드 받으세요!</p> 
-                                    </div>
-                                </div>
-                                   
-                        
-                                  
-                            </li>
-                        </ul>
-        
-                    
-                
-                
-                    </div>
-                        
-            </div>            
-           
-    
             <div class="main_down">
-                <p >
-                    앱 다운받고 <strong>더 많은 혜택</strong> 받으세요
-                </p>
-                <a href="" style="position:absolute; top:60%; transform: translate(-60%,-50%);">
-                    <img src="./image/main/down_playstore.png" style="width: 150px;">
-                </a>
-                <a href="" style="position:absolute; top:60%; transform: translate(60%,-50%);">
-                    <img src="./image/main/down_appstore.png" style="width:150px;">
-                </a>
+                <p>앱 다운받고 <strong>더 많은 혜택</strong> 받으세요</p>
+                <div><a href=""><img src="./image/main/down_playstore.png" style="width: 150px;"></a><a href=""><img src="./image/main/down_appstore.png" style="width:150px;"></a></div>
             </div>
                 
             <div class="main_event">
                 <h2>이벤트</h2>
-                <div class="swiper" style="display: flex; flex-direction: row;">
-                    <!-- Additional required wrapper -->
-                    
+                <div class="swiper">
                     <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
-                            <a  href="./more/eventView/2.html">
-                                <img src="./image/main/event1.jpg" > 
-                            </a>
-                            
+                            <a href="./more/eventView/2.html"><img src="./image/main/event1.jpg"></a>
                         </div>
                         <div class="swiper-slide"> 
-                            <a href="./more/eventView/3.html">
-                                <img class="img" src="./image/main/event2.jpg" > 
-
-                            </a>
+                            <a href="./more/eventView/3.html"><img src="./image/main/event2.jpg"></a>
                         </div>
                         <div class="swiper-slide"> 
-                            <a href="./more/eventView/4.html">
-                                 <img class="img" src="./image/main/event1.jpg"> 
-
-                            </a>
+                            <a href="./more/eventView/4.html"><img src="./image/main/event3.png"></a>
                         </div>
                     </div>
                     <!-- If we need pagination -->
@@ -238,78 +179,34 @@
                     <!-- If we need navigation buttons -->
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
-                  
                 </div>
-                
                 <div style="clear: both;"></div>
-                   
             </div>
-    
-            
-            <div class="main_ad">
-                <div>
-                    <ul>
-                    <li>
-                            <img src="./image/main/ad_mo_01_171013.png" > 
-    
-                    </li>
-                    <li>
-                            <img src="./image/main/ad_mo_02_171013.png" >          
-    
-                    </li>
-                </ul>
-                </div>
-                
-            </div>            
-    
-                
+
+            <ul class="main_ad">
+                <li><img src="./image/main/ad_mo_01_171013.png" ></li>
+                <li><img src="./image/main/ad_mo_02_171013.png" ></li>
+            </ul>        
         </div>
         
-
         <footer>
-            <style>
-                footer{
-                    background-color: rgb(245,245,245);
-                    width: 100%; 
-                    padding: 40px 20px 20px 20px; 
-                    margin-top: 120px;
-                    color: #99999a;
-                }
-                footer div{
-                    font-size: 0.8em;
-                    margin-top: 3px;
-                    margin-bottom: 3px;
-                }
-                footer button{
-                    background-color: transparent;
-                    border: none;
-                    background-size: contain; 
-                    width: 24px; 
-                    height: 24px;
-                }
-                footer #btn_facebook{
-                    background-image: url(./image/Facebook_logo.svg);
-                }
-                footer #btn_blog{
-                    background-image: url(./image/blog_icon.svg);
-                }
-            </style>
-    
-            <div>회사소개 | 이용약관 | 개인정보처리방침 | 소비자 분쟁해결 기준 | 사업자 정보확인</div>
-            <div>여기어때 마케팅센터 | 액티비티 호스트센터 | HOTEL 여기어때 | 콘텐츠산업진흥법에의한 표시</div>
-            <br>
-            <div><b>고객행복센터 1670-6250</b> 오전 9시 - 새벽 3시</div>
-            <br>
-            <div>(주) 여기어때컴퍼니</div>
-            <div>주소 : 서울특별시 강남구 봉은사로 479, 479타워 11층 | 대표이사 : 정명훈 | 사업자등록번호: 742-86-00224</div>
-            <div>통신판매번호 : 2017-서울강남-01779 | 관광사업자 등록번호: 제1026-24호 | 전화번호 : 1670-6250 | 전자우편주소 : help@goodchoice.kr</div>
-            <div>(주) 여기어때컴퍼니는 통신판매중개자로서 통신판매의 당사자가 아니며, 상품의 예약, 이용 및 환불 등과 관련한 의무와 책임은 각 판매자에게 있습니다.</div>
-            <br>
-            <div>Copyright GC COMPANY Corp. All rights reserved.</div>
-            <br>
-            <hr>
-            <br>
-            <div><button id="btn_facebook"></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="btn_blog"></button></div>
+            <div id="footer_content">
+                <div>회사소개 | 이용약관 | 개인정보처리방침 | 소비자 분쟁해결 기준 | 사업자 정보확인</div>
+                <div>여기어때 마케팅센터 | 액티비티 호스트센터 | HOTEL 여기어때 | 콘텐츠산업진흥법에의한 표시</div>
+                <br>
+                <div><b>고객행복센터 1670-6250</b> 오전 9시 - 새벽 3시</div>
+                <br>
+                <div>(주) 여기어때컴퍼니</div>
+                <div>주소 : 서울특별시 강남구 봉은사로 479, 479타워 11층 | 대표이사 : 정명훈 | 사업자등록번호: 742-86-00224</div>
+                <div>통신판매번호 : 2017-서울강남-01779 | 관광사업자 등록번호: 제1026-24호 | 전화번호 : 1670-6250 | 전자우편주소 : help@goodchoice.kr</div>
+                <div>(주) 여기어때컴퍼니는 통신판매중개자로서 통신판매의 당사자가 아니며, 상품의 예약, 이용 및 환불 등과 관련한 의무와 책임은 각 판매자에게 있습니다.</div>
+                <br>
+                <div>Copyright GC COMPANY Corp. All rights reserved.</div>
+                <br>
+                <hr>
+                <br>
+                <div><button id="btn_facebook"></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="btn_blog"></button></div>
+            </div>
         </footer>
     </body>
 </html>

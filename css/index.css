@@ -16,13 +16,14 @@ button{
     background-color: transparent;
 }
 
+/* header */
 .top_header_bg{
     position: fixed;
     top: 0px;
     width: 100%;
     height: 72px;
     background-color: #f7323f;
-    z-index: 2;
+    z-index: 1;
 }
 header{
     position: absolute;
@@ -40,7 +41,7 @@ header{
     padding: 0px 30px;
     align-items: center;
     justify-content: space-between;
-    z-index: 2;
+    z-index: 1;
 }
 .top_header #btn_more{
     display: none;
@@ -180,29 +181,12 @@ header{
 #header_drawer .drawer_tel :last-child{
     font-size: 0.9em;
 }
-
-.sub_header{
-    position: flex;
-    flex-direction: column;
-    width: 964px;
-    height: 211px;
-    padding: 0px 30px;
-}
-.sub_header h1{
-    font-weight: normal;
-    font-size: 2.2em;
-    color: white;
-    margin-top: 82px;
-}
-
 @media screen and (max-width: 1024px) {
     .top_header_bg{
         position: absolute;
         height: 44px;
         background-color: white;
-    }
-    .header_bg{
-        display: none;
+        z-index: 0;
     }
     header{
         height: 88px;
@@ -212,9 +196,10 @@ header{
         width: 100%;
         box-sizing: border-box;
         height: 44px;
+        padding: 0px 20px;
         background-color: white;
         justify-content: space-between;
-        padding: 0px 20px;
+        z-index: 0;
     }
     .top_header #btn_more{
         display: inline-block;
@@ -235,227 +220,190 @@ header{
         display: inline-block;
         margin-right: 20px;
     }
+}
 
-    .sub_header{
-            display: flex;
-            height: 44px;
-            margin-top: 44px;
-            justify-content: center;
-            align-items: center;
-            background-color: white;
-    }
-    .sub_header h1{
-            font-size: 1.2em;
-            margin-top: 0px;
-            color: black;
-    }
+h2{
+    margin-bottom: 15px;
+}
+@media screen and (max-width:1024px) {
+    h2{
+        font-size: 1.0em;
+    }   
 }
 
 #content{
     display: flex;
+    width: 1024px;
+    padding: 0px 30px;
+    box-sizing: border-box;
+    margin: 72px auto 0px auto;
     flex-direction: column;
+}
+
+/* main_img */
+.main_img img{
     width: 964px;
-    margin: 0px auto;
-    padding-top: 112px;
-    padding-left: 30px;
-    padding-right: 30px;
 }
-#upper_content{
-    display: flex;
-}
-#upper_content #gallery{
-    width: 490px;
-}
-#upper_content #big_picture{
-    position: relative;
-    height: 348px;
-}
-#upper_content #big_picture img{
-    position: absolute;
-}
-#upper_content #introduce{
-    display: flex;
-    flex-direction: column;
-    width: 454px;
-    padding-left: 40px;
-    background-color: white;
-}
-#upper_content #introduce #name{
-    font-weight: bold;
-    font-size: 1.7em;
-    margin-bottom: 8px;
-}
-#upper_content #introduce #score{
-    background-color: #ffa726;
-    border-radius: 4px;
-    padding: 2px;
-    color: white;
-}
-#upper_content #introduce #recommend{
-    font-size: 1.15em;
-    color: #ffa726;
-}
-#upper_content #introduce #review_count{
-    font-size: 1.15em;
-    color: gray;
-}
-#upper_content #introduce #location{
-    font-size: 1.15em;
-    margin-top: 8px;
-    margin-bottom: 10px;
-}
-#upper_content #introduce #owner_comment{
-    background-color: lightgray;
-    border-radius: 6px;
-    padding: 20px;
-    font-size: 0.95em;
-    color: rgb(100, 100, 100);
-}
-#upper_content #introduce #owner_comment :first-child{
-    font-weight: bold;
-    margin-bottom: 6px;
-    color: black;
-}
-#upper_content .swiper{
-    width: 490px;
-    margin-top: 10px;
-}
-#upper_content .swiper-slide>img{
-    width: 109px;
-}
-@media screen and (max-width: 1024px) {
+@media screen and (max-width:1024px) {
     #content{
-        padding-top: 44px;
         width: 100%;
-        padding-left: 0px;
-        padding-right: 0px;
+        padding: 0px;
+        margin-top: 44px;
     }
-    #upper_content{
+    .main_img img{
+        width: 100%;
+    }
+}
+
+/* main_icons */
+.main_icons{
+    background-color: rgb(245, 244, 244);
+    display: flex;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.main_icons ul{
+    display: flex;
+    justify-content: space-around;
+}
+.main_icons li{    
+    width: 161px;
+}
+.main_icons img{
+    width: 70px; 
+    height: 70px;
+}
+@media screen and (max-width:1024px) {
+    .main_icons{
         flex-direction: column;
     }
-    #upper_content #gallery{
-        width: 100%;
+    .main_icons li{    
+        width: 100px;
     }
-    #upper_content #big_picture{
-        display: none;
+    .main_icons img{
+        width: 40px; 
+        height: 40px;
     }
-    #upper_content #introduce{
-        box-sizing: border-box;
-        width: 100%;
+}
+
+/* main_news */
+.main_news{
+    margin-top: 100px;
+}
+.main_news ul{
+    display: flex;
+    width: 100%;
+}
+.main_news li{
+    display: flex;
+    width: 473px;
+    border: 1px solid rgb(220, 220, 220);
+}
+.main_news img{
+    height: 160px; width: 160px;  
+}
+.main_news li div{
+    padding: 30px;
+}
+.main_news .news_title{
+    color: #00796b; 
+    font-size: 20px;
+}
+.main_news .news_msg{
+    color: rgb(155, 155, 155);
+}
+@media screen and (max-width:1024px) {
+    .main_news{
+        margin-top: 40px;
         padding: 20px;
     }
-    #upper_content .swiper{
-        width: 100%;
-        margin-top: 0px;
+    .main_news ul{
+        flex-direction: column; 
     }
-    #upper_content .swiper-slide>img{
-        width: 100%;
+    .main_news li{
+        border:none; 
+        border-bottom: 1px solid rgb(220, 220, 220);
+        width: 100%; 
+        flex-direction: row;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+    .main_news img{ 
+        width: 95px; height: 95px;
+    }
+    .main_news li div{
+        padding: 10px;
+    }
+    .main_news .news_title{
+        font-size: 17px;
+    }
+    .main_news .news_msg{
+        font-size: 14px;
     }
 }
 
-#tab>ul{
-    display: flex;
-}
-#tab li{
-    padding: 10px;
-    border-bottom: 1px solid lightgray;
-    font-size: 1.2em;
-}
-#tab>ul :first-child{
-    color: #ff0055;
-    border-bottom: 3px solid #ff0055;
-}
-#tab>ul :last-child{
-    flex-grow: 1;
-}
-
-#reservation #input_date{
-    margin: 32px 0px;
-    width: 248px;
-    height: 40px;
-}
-#reservation .res_item{
-    display: flex;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 20px 0px;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid lightgray;
-}
-#reservation .res_item img{
-    width: 376px;
-    height: 226px;
-    object-fit: cover;
-}
-#reservation .room_name{
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-bottom: 10px;
-    margin-left: 20px;
-}
-#reservation .charge{
-    display: flex;
-    justify-content: space-evenly;
-}
-#reservation .charge>div{
+/* download */
+.main_down{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 320px;
+    background-image: url(../image/main/bg_appdown.png);
+    background-size: cover;
+    margin-top: 80px;
+}
+.main_down p{
+    margin-bottom: 30px;
+    font-size: 1.6em;
+}
+
+@media screen and (max-width:1024px){
+    .main_down{display: none;}
+}
+
+/* event section */
+.main_event{
+    margin-top: 60px;
+}
+.main_event .swiper{
+    width: 100%
+}
+.main_event .swiper img{
+    width: 964px;
+}
+@media screen and (max-width:1024px){
+    .main_event{
+        margin-top: 40px;
+    }
+    .main_event h2{
+        margin-left: 20px;
+    }
+    .main_event .swiper img{
+        width: 100%;
+    }
+}
+
+/* advertisement */
+.main_ad{
+    display: flex;
     justify-content: space-between;
-    width: 254px;
-    height: 197px;
-    margin-left: 20px;
+    margin-top: 60px;
 }
-#reservation .charge>div>:first-child{
-    font-size: 1.1em;
-}
-#reservation .res_item button{
+.main_ad img{
     width: 100%;
-    background-color: rgba(255,0,85,1);
-    color: white;
-    padding: 10px;
-    border-radius: 6px;
-    font-size: 1.1em;
 }
-
-#info{
-    display: none;
-}
-
-#review{
-    display: none;
-}
-
-.btn_go_top{
-    position: fixed;
-    width: 35px;
-    height: 35px;
-    bottom: 20px;
-    right: 20px;
-    opacity: 0.7;
-    background-image: url('../image/up-arrow.png');
-    background-color: lightgray;
-    background-size: contain;
-    border-color: rgba(200, 200, 200, 0.5);
-    text-align: center;
-}
-
-@media screen and (max-width: 1024px) {
-    #reservation .res_item{
+@media screen and (max-width:1024px){
+    .main_ad ul{
         flex-direction: column;
     }
-    #reservation .res_item img{
+    .main_ad ul li{
         width: 100%;
-        height: fit-content;
-        object-fit: cover;
     }
-    #reservation .room_name{
-        margin-left: 0px;
-        margin-top: 10px;
-    }
-
 }
 
+/* footer */
 footer{
     background-color: rgb(245,245,245);
     width: 100%;
